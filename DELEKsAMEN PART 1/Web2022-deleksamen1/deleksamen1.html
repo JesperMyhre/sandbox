@@ -1,38 +1,43 @@
 <!--Validator finner 22 feil i koden-->
-<html>
-    <body>
-        <head>
+<!DOCTYPE html> <!--Doctype var ikke skrevet inn. Må alltid starte med doctype html for at det skal kjøre-->
+<html lang="nb"> <!--skriver inn "lang="nb" slik at html filen forstår hvilken språk vi ønsker å bruke"-->
+         <head>
+            <meta charset="UTF-8"> <!--anerkjenner alfabetspråket for tastatur-->
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" type="text/css" href="style.css>
+            <link rel="stylesheet" type="text/css" href="style.css"> <!--manglet apostrof-->
             <title>Web eksamen del 1</title>
         </head>
+    <body> <!--hodet er alltid over kroppen-->
         <nav>
-            <h1>Logo</h1>
+            <h2>Logo</h2> <!--endrer til h2 fordi logo er mindre prioritert enn hovedinnholdet-->
+            <ul> <!--punktene var ikke satt inn i en ustrukturert liste-->
                 <li> <a href="#">Boatswain schooner</a></li>
                 <li> <a href="#">Account lookout</a></li>
                 <li> <a href="#">Sail ho shrouds</a></li>
+            </ul>
         </nav>
         <header>
-            <h1>Yar Pirate Ipsum</h1>
+            <h1>Yar Pirate Ipsum</h1><!--hovedinnholdet er h1-->
             <p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl.</p>
             <a class="button">Les mer</a>
         </header>
-        <div id="main">
+        <main> <!--Div er gammelt og utdatert måte å skrive main på, dermed bruker vi heller bare main direkte som ble vist under forelsning-->
             <article>
-                <h1>Prow scuttle</h1>
+                <h3>Prow scuttle</h3><!--endrer fra h1 til h3 fordi det er lavere proiritert enn hovedinnholdet og logo-->
                 <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
                 <a href="#">Les mer</a>
-            <article>
-                <h1>Jack Tar transom</h1>
-                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
-                <a href="#">Les mer</a>
-            </article>
-            <article>
-                <h1>Trysail Sail</h1>
+            </article> <!--article var ikke lukket-->
+            <article><!--manglet article opening tag-->
+                <h3>Jack Tar transom</h3><!--endrer fra h1 til h3 fordi det er lavere proiritert enn hovedinnholdet og logo-->
                 <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
                 <a href="#">Les mer</a>
             </article>
-        </div>
+            <article>
+                <h3>Trysail Sail</h3><!--endrer h1 til h3 fordi det er lavere proiritert enn hovedinnholdet og logo-->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a>
+            </article>
+        </main>
         <footer>
             <span>Twitter</span>
             <span>Facebook</span>
