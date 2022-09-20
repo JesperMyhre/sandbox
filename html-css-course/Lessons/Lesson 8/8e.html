@@ -8,21 +8,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>8e</title>
     <style>
-      h1 {
+      html {
         font-family: montserrat;
+      }
+
+      h1 {
+        font-size: 20px;
       }
 
       .pickup,
       .destination {
         display: block;
+
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        background-color: rgb(230, 230, 230);
+        
+        margin-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .request,
+      .schedule {
+        display: inline-block;
+        border: none;
+      
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        margin-right: 5px;
+        margin-top: 15px;
       }
 
       .request {
-        display: block;
-      }
-
-      .schedule {
-        display: inline-block
+        background-color: black;
+        color: white;
       }
 
     </style>
@@ -31,7 +58,7 @@
     <h1>Request a ride now</h1>
 
     <input class="pickup" type="text" placeholder="Enter pickup location">
-    <input class="desination" type="text" placeholder="Enter destination">
+    <input class="destination" type="text" placeholder="Enter destination">
     <button class="request">Request now</button>
     <button class="schedule">Schedule for later</button>
   </body>
