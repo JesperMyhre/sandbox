@@ -1,0 +1,14 @@
+html {
+  font-size: calc(1em + 1vw)
+}
+
+
+
+@media (min-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+  html {
+    background-color: grey;
+  }  
+}
