@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>12e</title>
+    <style>
+      p {
+        font-family: arial;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: grey;
+        border-radius: 8px;
+
+        max-width: 300px;
+        padding: 5px 5px 0 5px;
+      }
+
+      .menu, 
+      .alerts {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+      }
+
+      .alert-button {
+        margin-bottom: 10px;
+
+        background-color: blue;
+        color: white;
+        border: none;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <p class="home">Home</p>
+        <p class="notifications">Notifications</p>
+        <p class="messages">Messages</p>
+      </div>
+      <div class="alerts">
+        <button class="alert-button">14</button>
+        <button class="alert-button">3</button>
+        <button class="alert-button">5</button>
+      </div>
+    </div>
+  </body>
+</html>
