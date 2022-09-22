@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>12f</title>
+    <style>
+      html {
+        font-family: arial;
+      }
+      .container {
+        background-color: purple;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 15px;
+      }
+
+      .searchbar {
+        max-width: 700px;
+        flex: 1;
+
+        border: none;
+        border-radius: 20px;
+        padding: 8px 10px;
+      }
+
+      .home {
+        color: white;
+        font-weight: bold;
+      }
+
+      .download-button {
+        background: transparent;
+        border-color: white;
+        color: white;
+        border-style: solid;
+        border-width: 1px;
+        padding: 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="home">Home</p>
+      <input class="searchbar" type="text" placeholder="Search">
+      <button class="download-button">Download</button>
+    </div>
+  </body>
+</html>
