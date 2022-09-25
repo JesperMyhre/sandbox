@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>14e</title>
+    <style>
+      body {
+        height: 3000px;
+        background-color: grey;
+      }
+      html {
+        font-family: arial;
+      }
+      .header {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+      }
+
+      .section1 {
+        display: flex;
+        align-items: center;
+      }
+      .profile-picture {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        border-radius: 20px;
+
+        margin-left: 50px;
+      }
+
+      .username {
+        font-weight: bold;
+        margin-left: 10px;
+      }
+    
+      .section2 {
+        margin-right: 50px;
+      }
+
+      .add-friend-button {
+        padding: 10px 10px;
+        background-color: rgb(54, 91, 255);
+        color: white;
+        font-weight: bold;
+
+        border: none;
+        border-radius: 5px;
+      }
+
+      .message-button {
+        padding: 10px 10px;
+        background-color: rgb(215, 215, 215);
+        font-weight: bold;
+
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="section1">
+        <img class="profile-picture" src="../../images/images2.jpeg">
+        <p class="username">John Cat</p>
+      </div>
+      <div class="section2">
+        <button class="add-friend-button">Add Friend</button>
+        <button class="message-button">Message</button>
+      </div>
+    </div>
+  </body>
+</html>
