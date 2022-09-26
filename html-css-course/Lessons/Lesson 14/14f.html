@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>14f</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      p {
+        margin: 0;
+      }
+
+      .sidebar {
+        display: flex;
+        flex-direction: row;
+      }
+      .friend-column {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        background-color: rgba(32,34,37,255);
+        width: 14vw;
+        height: 100vh;
+        padding-top: 2vh;
+        
+      }
+      .friendlist {
+        margin-top: 10px;
+      }
+
+      .profile-picture {
+        width: 80%;
+        object-fit: cover;
+        border-radius: 22.5px;
+
+        margin-bottom: 10px;
+      }
+
+      .info-column {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(47,49,54,255);
+
+        width: 40vw;
+        height: 100vh;
+        padding: 2vh 5vw;
+      }
+
+      .info-header-flexbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .plus-sign {
+        color: grey;
+        font-size: 6vw;
+      }
+      .column-header {
+        color: rgb(170, 170, 170);
+        font-size: 3vw;
+        margin: 0;
+      }
+      
+      .channel {
+        color:rgb(170, 170, 170);
+        line-height: 3.3vh;
+        margin-left: 4px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="friend-column">
+        <img class="profile-picture" src="../../images/images2.jpeg">
+        <img class="profile-picture" src="../../images/images.jpg">
+        <img class="profile-picture" src="../../images/funny.webp">
+    </div>
+    <div class="info-column">
+      <div class="info-header-flexbox">
+        <h4 class="column-header">INFO</h4>
+        <p class="plus-sign">&plus;</p>
+      </div>
+        <p class="channel">&#x23 new-videos</p>
+        <p class="channel">&#x23 updates</p>
+        <p class="channel">&#x23 faq</p>
+    </div>
+  </div>
+  </body>
+</html>

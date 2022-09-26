@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>13d</title>
+    <style>
+      html {
+        font-family: arial;
+      }
+      p {
+        margin: 0;
+      }
+
+      .mail {
+        padding: 10px 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 400px;
+
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+      
+      .inbox-category{
+        font-size: 14px;
+        color: grey;
+        margin-bottom: 20px;
+      }
+
+      .mail-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      
+      .profile-picture {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+
+        margin-right: 10px;
+      }
+
+      .mail-content {
+        flex: 1;
+      }
+
+      .mail-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .mail-text,
+      .time-received {
+        font-size: 12px;
+        color: grey;
+      }
+
+      .mail-subject,
+      .mail-title {
+        font-weight: bold;
+        padding-bottom: 5px;
+      }
+
+      .mail-subject{
+        font-size: 12px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="mail">
+      <div class="inbox-category">
+        ALL INBOXES
+      </div>
+      <div class="mail-card"><!--flex-->
+        <img class="profile-picture" src="../../images/funny.webp">
+        <div class="mail-content"> <!--flex-->
+          <div class="mail-header"><!--flex-->
+            <p class="mail-title">Chewy Promotions</p>
+            <p class="time-received">4:58 PM</p>
+          </div>
+          <p class="mail-subject">Biggest sales of the year!</p>
+          <p class="mail-text">Hey there! We're writing to tell you about our...</p>
+        </div>
+      </div>
+
+      <div class="mail-card"><!--flex-->
+        <img class="profile-picture" src="../../images/images2.jpeg">
+        <div class="mail-content"> <!--flex-->
+          <div class="mail-header"><!--flex-->
+            <p class="mail-title">Best buy</p>
+            <p class="time-received">12:32 PM</p>
+          </div>
+          <p class="mail-subject">Your Best Buy eReceipt</p>
+          <p class="mail-text">Thank you for shopping at Best Buy, here is...</p>
+        </div>
+      </div>
+      <div class="mail-card"><!--flex-->
+        <img class="profile-picture" src="../../images/images.jpg">
+        <div class="mail-content"> <!--flex-->
+          <div class="mail-header"><!--flex-->
+            <p class="mail-title">Netflix</p>
+            <p class="time-received">9:00 PM</p>
+          </div>
+          <p class="mail-subject">Here's whatt's coming soon to Netflix</p>
+          <p class="mail-text">Brand new movies and shows, old favorites...</p>
+        </div>
+      </div>
+
+  </div>
+  </body>
+</html>
