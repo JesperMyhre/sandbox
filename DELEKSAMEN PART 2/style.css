@@ -1,6 +1,7 @@
 main {
   display: flex;
-  flex-wrap: flex wrap;
+  flex-direction: row;
+  justify-content: center;
   column-gap: 20px;
 }
 
@@ -18,7 +19,50 @@ main {
 }
 
 .article-card {
+  max-width: 250px;
+
+  padding: 10px;
+
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
   -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 200px;
+  background-color: gray;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.nav-list a {
+   margin-right: 40px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+.left-section {
+  background-color: lightblue;
+  width: 150px;
+}
+.middle-section {
+  background-color: lightpink;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+}
+.right-section {
+  background-color: lightblue;
+  width: 200px;
+}
+
