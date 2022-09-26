@@ -11,6 +11,8 @@ main {
   margin-left: 10px;
 }
 
+grid-template-column: header header header main main main footer footer footer
+
 .article-thumbnail {
   width: 200px;
   height: 200px;
