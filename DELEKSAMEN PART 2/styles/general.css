@@ -1,0 +1,7 @@
+html {
+  font-family: roboto, arial;
+}
+body {
+  margin: 0;
+  background-image: linear-gradient(180deg, transparent, orange);
+}
