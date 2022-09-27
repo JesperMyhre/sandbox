@@ -7,8 +7,6 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-
-  margin-bottom: 10px;
 }
 
 .video-author,
@@ -18,6 +16,7 @@
 }
 
 .video-author {
+  margin-top: 10px;
   margin-bottom: 4px;
 }
 
@@ -28,6 +27,10 @@
 
 .video-preview {
   width: 16.5em;
+}
+.video-preview a {
+  text-decoration: none;
+  color: black;
 }
 
 .profile-picture {
@@ -61,4 +64,39 @@
   flex-wrap: wrap;
   column-gap: 16px;
   row-gap: 40px;
+}
+
+.channel-highlight {
+  display: inline-block;
+  position: relative;
+}
+.highlight-window {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  padding: 0.6rem;
+  width: 13vw;
+
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.highlight-picture {
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+.highlight-text {
+  margin: 0 0 0 0.7rem;
+}
+
+.channel-highlight:hover .highlight-window {
+  opacity: 1;
 }
