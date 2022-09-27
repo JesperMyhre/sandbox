@@ -13,3 +13,9 @@ body {
   height: 3000px;
   background-color: rgb(244, 244, 244);
 }
+
+@media (min-width: 1200.1px) {
+  body {
+    margin-left: 168px;
+  }
+}
