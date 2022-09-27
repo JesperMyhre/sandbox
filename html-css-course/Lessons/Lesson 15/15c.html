@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      background-color: grey;
+      width: 360px;
+      height: 180px;
+
+      position: relative;
+      top: 100px;
+      left: 50px;
+    }
+
+    .close-button {
+      background-color: black;
+      color: white;
+
+      position: absolute;
+      top: -8px;
+      left: -10px;
+
+      font-size: 12px;
+      padding: 6px 8px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .video-time {
+      background-color: black;
+      color: white;
+
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+
+      padding: 2px 4px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+    <div class="box">
+      <button class="close-button">X</button>
+      <div class="video-time">0:29</div>
+    </div>
+</body>
+</html>

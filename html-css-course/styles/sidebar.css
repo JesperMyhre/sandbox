@@ -1,9 +1,73 @@
+@media (max-width: 1200px) {
 .sidebar {
   position: fixed;
   left: 0;
   bottom: 0;
   top: 55px;
   width: 70px;
+  z-index: 200;
+  padding-top: 5px;
 
   background-color: white;
+}
+
+.sidebar-link {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+.sidebar-link img {
+  width: 24px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div {
+  font-size: 10px;
+}
+}
+
+@media (min-width: 1200.1px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    width: 240px;
+    z-index: 200;
+    padding-top: 5px;
+  
+    background-color: white;
+  }
+  
+  .sidebar-link {
+    margin-left: 24px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .sidebar-link:hover {
+    background-color: rgb(180, 180, 180);
+  }
+  
+  .sidebar-link img {
+    width: 24px;
+    margin-bottom: 4px;
+  }
+  
+  .sidebar-link div {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 1.5rem;
+  }
 }
