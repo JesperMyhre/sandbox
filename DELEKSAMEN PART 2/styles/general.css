@@ -3,5 +3,10 @@ html {
 }
 body {
   margin: 0;
-  background-image: linear-gradient(180deg, transparent, orange);
+  background-image: linear-gradient(180deg, orange, transparent );
+}
+
+ul {
+  list-style: none;
+  padding: 0 2rem;
 }
