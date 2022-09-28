@@ -1,0 +1,10 @@
+.col2,
+.col1,
+main {
+  display: flex;
+}
+
+.col2,
+.col1 {
+  flex-direction: column;
+}

@@ -1,0 +1,33 @@
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+
+.footer-list-container {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  column-gap: 2rem;
+
+  border-top: 1px solid white;
+  margin-top: 30px;
+}
+
+.footer-list-container ul {
+  list-style: none;
+  padding: 0 2rem;
+  margin: 0;
+}
+
+.footer-list-container li a,
+.footer-list-container li {
+  line-height: 30px;
+  color: white;
+}
