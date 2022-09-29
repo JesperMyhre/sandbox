@@ -62,7 +62,6 @@ h1 {
 
 @media (min-width: 900px) {
   nav {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,7 +98,6 @@ h1 {
   }
 
   .banner-overlay-container {
-    position: absolute;
     margin: 40px 0 0 9vw;
     color: white;
     font-size: 1.2rem;
@@ -135,10 +133,6 @@ h1 {
 
   .banner-overlay-container {
     margin: auto auto;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     color: white;
     font-size: 1.5rem;
