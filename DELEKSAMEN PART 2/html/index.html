@@ -1,9 +1,12 @@
+<!--har benyttet denne videoen en del
+https://www.youtube.com/watch?v=G3e-cpL7ofc-->
 <!DOCTYPE html>
 <html lang="nb">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hjem</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,99 +24,119 @@
 
 <body>
   <div class="main-page-container">
-  <header>
-  <video autoplay muted loop class="banner-video">
-    <!--Kilde til video: https://www.youtube.com/watch?v=HxsWDcNDCcc-->
-    <source src="../images/videoplayback.mp4" type="video/mp4">
-  </video>
-    <nav>
-      <a href="index.html"><img class="logo-image" src="../images/logo.png"></a>
-      <ul id="nav-menu" class="nav-menu" style="display: none;">
-        <a href="index.html"><li>Hjem</li></a>
-        <a href="#"><li>CMS</li></a>
-        <a href="#"><li>Analyse</li></a>
-        <a href="#"><li>UU vs SEO</li></a>
-        <a class="kontakt" href="#"><li >Kontakt oss</li></a>
-      </ul>
-      <a class="hamburger-icon" href="javascript:void(0)" onclick="navMenu()"><i class="fa-solid fa-bars"></i></a>
-    </nav>
-    <div class="banner-overlay-container">
-      <h1>Mjau Mjau</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry?</p>
-      <p>Interessert? Ta kontakt da vel!</p>
-      <button class="overlay-button">KONTAKT OSS</button>
-    </div>
-  </header>
-
-  <main>
-    <article class="article-card1">
-      <img class="article-thumbnail" src="../images/happy!.jpg">
-      <div class="article-info">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <a class="mer-info-lenke" href="#">Mer info</a>
+    <header>
+      <video autoplay muted loop class="banner-video">
+        <!--Kilde til video: https://www.youtube.com/watch?v=HxsWDcNDCcc-->
+        <source src="../images/videoplayback.mp4" type="video/mp4">
+      </video>
+      <nav>
+        <a href="index.html"><img class="logo-image" src="../images/logo.png" alt="Oops! Noe gikk galt!"></a>
+        <ul id="nav-menu" class="nav-menu" style="display: none;">
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="CMS.html">CMS</a></li>
+          <li><a href="Analyse.html">Analyse</a></li>
+          <li><a href="UUvsSEO.html">UU vs SEO</a></li>
+          <li><a class="kontakt" href="kontaktoss.html">Kontakt oss</a></li>
+        </ul>
+        <a class="hamburger-icon" href="javascript:void(0)" onclick="navMenu()"><i class="fa-solid fa-bars"></i></a>
+      </nav>
+      <div class="banner-overlay-container">
+        <h1>Mjau Mjau</h1>
+        <p>Mjau mjau purr purr, mjuamjau mjaumjaumjaumaju mjau mjau purr mjau!</p>
+        <p>Interessert? Ta kontakt da vel!</p>
+        <!--https://linuxhint.com/make-button-link-another-page-html/#:~:text=In%20HTML%2C%20a%20button%20link,a%20link%20on%20the%20button.
+          buttons inni a gir masse error hos validator, søkte opp dette for å finne en god løsning-->
+        <form action="kontaktoss.html">
+          <button class="overlay-button">KONTAKT OSS</button>
+        </form>
       </div>
-    </article>
+    </header>
 
-    <article>
-      <img class="article-thumbnail" src="../images/images.jpg">
-      <div class="article-info">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <a class="mer-info-lenke" href="#">Mer info</a>
+    <main>
+      <article class="article-card1">
+        <img class="article-thumbnail" src="../images/happy!.jpg" alt="Oops! Noe gikk galt!">
+        <div class="article-info">
+          <h2>CMS</h2>
+          <p>spspspsp spspspspsps spspspspsps
+            spspspspspsps pspspssp spspspsps
+            spsps pspspspsp spsps spspspspsps
+            spsp spspspspsp spspsspspspspsps
+            s pspspsps pspspspsp sspspspspsps
+            spspspsp spspspspspssp spspspsps
+            <span class="max-info" style="display: none;">Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+          </p>
+          <a class="mer-info-lenke" href="CMS.html">Mer info</a>
+        </div>
+      </article>
+
+      <article>
+        <img class="article-thumbnail" src="../images/images.jpg" alt="Oops! Noe gikk galt!">
+        <div class="article-info">
+          <h2>Analyse</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s.</p>
+          <a class="mer-info-lenke" href="Analyse.html">Mer info</a>
+        </div>
+      </article>
+
+      <article>
+        <img class="article-thumbnail" src="../images/deviouscat.jpg" alt="Oops! Noe gikk galt!">
+        <div class="article-info">
+          <h2>UU vs SEO</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s.</p>
+          <a class="mer-info-lenke" href="UUvsSEO.html">Mer info</a>
+        </div>
+      </article>
+
+      <button class="sound-button" onclick=audio.play()>Test</button>
+    </main>
+
+    <aside>
+      <ul>
+        <li><a class="aside-lenke" href="#">Lenke</a></li>
+        <li><a class="aside-lenke" href="#">Lenke</a></li>
+        <li><a class="aside-lenke" href="#">Lenke</a></li>
+      </ul>
+    </aside>
+
+    <footer>
+      <div class="footer-list-container">
+        <ul>
+          <li>
+            <h4>Kontakt</h4>
+          </li>
+          <li><a href="#">opptak@hiof.no</a></li>
+          <li><a href="#">studier@hiof.no</a></li>
+          <li><a href="#">postmottak@hiof.no</a></li>
+          <li><a href="#">69 60 80 00</a></li>
+        </ul>
+        <ul>
+          <li>
+            <h4>Lorem Ipsum</h4>
+          </li>
+          <li><a href="#">Lorem Ipsum</a></li>
+          <li><a href="#">Lorem Ipsum</a></li>
+          <li><a href="#">Lorem Ipsum</a></li>
+          <li><a href="#">Lorem Ipsum</a></li>
+        </ul>
+        <ul>
+          <li>
+            <h4>Hjelp</h4>
+          </li>
+          <li><a href="#">Kattespørsmål</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">#Donate</a></li>
+
+        </ul>
       </div>
-    </article>
-
-    <article>
-      <img class="article-thumbnail" src="../images/deviouscat.jpg">
-      <div class="article-info">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <a class="mer-info-lenke" href="#">Mer info</a>
-      </div>
-    </article>
-
-    <button class="sound-button" onclick="audio.play()">Test</button>
-  </main>
-
-  <aside>
-    <ul>
-      <li><a class="aside-lenke" href="#">Lenke</a></li>
-      <li><a class="aside-lenke" href="#">Lenke</a></li>
-      <li><a class="aside-lenke" href="#">Lenke</a></li>
-    </ul>
-  </aside>
-
-  <footer>
-    <div class="footer-list-container">
-      <ul>
-        <li><h4>Kontakt</h4></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-      </ul>
-      <ul>
-        <!--legger til en ekstra liste fordi det så penere ut
-        og brukeren vil få alle lenkebehov dekket-->
-        <li><h4>Lorem Ipsum</h4></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-      </ul>
-      <ul>
-        <li><h4>Hjelp</h4></li>
-        <li><a href="#">Kattespørsmål</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-
-      </ul>
-    </div>
-  </footer>
-</div>
-</body>
+    </footer>
+  </div>
   <script src="../javascript/scripts.js"></script>
+
+</body>
+
 </html>

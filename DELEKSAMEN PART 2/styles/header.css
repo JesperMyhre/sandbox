@@ -14,7 +14,6 @@ header {
   z-index: -1;
 }
 
-
 nav {
   position: relative;
   display: flex;
@@ -40,14 +39,18 @@ h1 {
 }
 
 .overlay-button {
+  display: inline-block;
   background-color: orange;
   border: 2px solid white;
   border-radius: 4px;
-  color: white;
-  font-weight: bold;
-  padding: 10px 15px;
+  padding: 10px;
+  text-align: center;
 
   cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
 }
 
 .overlay-button:active {
@@ -61,16 +64,6 @@ h1 {
 
 
 @media (min-width: 900px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    z-index: 100;
-    color: white;
-    padding: 5px 20px;
-  }
-
   #nav-menu {
     display: block !important;
     position: static;
@@ -78,15 +71,17 @@ h1 {
     border: none;
   }
 
-  #nav-menu li{
+  #nav-menu li {
     display: inline-block;
     border-bottom: 1px solid white;
     margin-left: -5px;
   }
+
   .kontakt {
     margin: 0;
   }
-  #nav-menu li {
+
+  #nav-menu a {
     margin-right: 40px;
     text-decoration: none;
     color: white;
@@ -103,15 +98,16 @@ h1 {
     font-size: 1.2rem;
     width: 17rem;
   }
-  .banner-overlay-container p{
+
+  .banner-overlay-container p {
     margin-top: 0;
     margin-bottom: 20px;
   }
 
 }
 
-@media (max-width: 899px){
-  .nav-menu {
+@media (max-width: 899px) {
+  #nav-menu {
     position: absolute;
     top: 0;
     right: 0;
@@ -119,13 +115,14 @@ h1 {
     padding: 10px 10px;
     line-height: 40px;
     margin-top: 4rem;
-  
+
     background-color: orange;
     border: 2px solid white;
     border-radius: 4px;
     list-style: none;
   }
-  .nav-menu a {
+
+  #nav-menu a {
     text-decoration: none;
     font-size: 1rem;
     color: white;
@@ -138,7 +135,8 @@ h1 {
     font-size: 1.5rem;
     width: 17rem;
   }
-  .banner-overlay-container p{
+
+  .banner-overlay-container p {
     margin-top: 0;
     margin-bottom: 20px;
   }

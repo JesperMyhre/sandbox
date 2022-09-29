@@ -2,6 +2,7 @@ main {
   grid-area: main;
   display: grid;
   row-gap: 1rem;
+  margin-left: 6vw;
 }
 
 main article {
@@ -9,14 +10,20 @@ main article {
   background-color: whitesmoke;
   min-width: 95%;
   max-width: 800px;
+  height: 200px;
 
   padding: 10px;
   margin: 0 10px;
   border-radius: 4px;
 
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.33);
+}
+
+main article p,
+main article h2 {
+  margin: 2px;
 }
 
 .article-thumbnail {
@@ -25,6 +32,7 @@ main article {
   object-fit: cover;
   border-radius: 10px;
 }
+
 .article-info {
   display: grid;
   grid-template-rows: 40px 1fr;
@@ -40,10 +48,10 @@ aside {
   display: flex;
   flex-direction: column;
 }
+
 aside ul {
   display: flex;
   flex-direction: column;
-  align-items: right;
 
   background-color: rgb(201, 136, 14);
   margin-right: 40px;
@@ -56,22 +64,30 @@ aside ul {
     grid-template-columns: 1fr 20vw;
     grid-template-rows: auto auto;
     grid-template-areas: "header header"
-                          "main aside"
-                          "footer footer";
+      "main aside"
+      "footer footer";
+
+    min-height: 100vh;
   }
 
   .article-card1 {
     height: 500px;
   }
+
   .article-card1 img {
     width: 100%;
-    max-width: 30rem;
+    max-width: 100vw;
     object-fit: cover;
     border-radius: 10px;
   }
+
   .article-card1 h2 {
     margin: 0;
     font-size: 2rem;
+  }
+
+  .max-info {
+    display: block !important;
   }
 }
 
@@ -79,11 +95,17 @@ aside ul {
   .main-page-container {
     display: grid;
     grid-template-areas: "header"
-                          "main"
-                          "aside"
-                          "footer";
+      "main"
+      "aside"
+      "footer";
     grid-template-columns: 1fr;
+    min-height: 100vh;
   }
+
+  main {
+    margin: 0 2vw;
+  }
+
   aside ul {
     width: 100%;
   }

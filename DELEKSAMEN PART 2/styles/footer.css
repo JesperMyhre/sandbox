@@ -13,11 +13,10 @@ footer {
   box-sizing: content-box;
   display: flex;
   flex-direction: row;
-  align-items: top;
   column-gap: 2rem;
 
   border-top: 1px solid white;
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
 .footer-list-container ul {
@@ -28,6 +27,7 @@ footer {
 
 .footer-list-container li a,
 .footer-list-container li {
+  text-align: center;
   line-height: 30px;
   color: white;
 }
