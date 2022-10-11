@@ -1,0 +1,15 @@
+.table-container {
+  display: table;
+  background-color: white;
+  border: 1px solid black;
+  margin: 25px;
+}
+.table-row {
+  display: table-row;
+}
+
+.table-data {
+  border: 1px solid black;
+  display: table-cell;
+  padding: 10px 15px;
+}
