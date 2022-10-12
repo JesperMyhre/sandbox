@@ -8,7 +8,7 @@ header {
   position: absolute;
   right: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 500px;
   object-fit: fill;
   z-index: -1;
