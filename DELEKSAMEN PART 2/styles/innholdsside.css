@@ -1,0 +1,25 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  line-height: 24px;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+header {
+  height: 100px;
+}
+
+.cms-article-img {
+  width: 100%;
+}
+
+article img {
+
+}

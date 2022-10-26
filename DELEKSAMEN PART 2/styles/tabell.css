@@ -1,17 +1,23 @@
 .table-container {
   background-color: white;
   border: 1px solid black;
-  margin: 25px;
+  max-width: 80%;
+  margin: 25px auto;
 }
 .cms-table-row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 14vw 1fr 1fr 1fr;
 }
 .uuseo-table-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.table-data {
+.table-data,
+.table-header {
   border: 1px solid black;
   padding: 10px 15px;
+}
+
+.table-header {
+  white-space: nowrap;
 }

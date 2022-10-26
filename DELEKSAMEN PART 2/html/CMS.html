@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Artikkel om CMS" content="Her kan du lese om CMS og de forskjellige løsningene">
   <title>CMS</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="../styles/header.css">
-  <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  <link rel="stylesheet" type="text/css" href="../styles/innholdsside.css">
   <link rel="stylesheet" type="text/css" href="../styles/footer.css">
   <link rel="stylesheet" type="text/css" href="../styles/general.css">
   <link rel="stylesheet" type="text/css" href="../styles/error.css">
@@ -25,7 +26,6 @@
 <body>
   <div class="main-page-container">
   <header>
-    <img class="banner" src="https://kinsta.com/wp-content/uploads/2018/03/content-management-system-2.png">
     <nav>
       <a href="index.html"><img class="logo-image" src="../images/logo.png" alt="Oops! Noe gikk galt!"></a>
       <ul id="nav-menu" class="nav-menu" style="display: none;">
@@ -40,6 +40,16 @@
   </header>
 
   <main>
+    <article>
+      <img class="cms-article-img" src="https://kinsta.com/wp-content/uploads/2018/03/content-management-system-2.png">
+      <h3>CMS</h3>
+      <p>CMS, eller Content Management System, er et system som lar deg designe og opprettholde en nettside/applikasjon uten forkunnskaper innen koding. Det er mange forskjellige CMS som er spesialisert til enkelte behov, blant de mest brukte er Wordpress, Joomia, og Squarespace. CMS er delt opp i to kategorier - Seamless (traditional) og Headless CMS, men hva er det som skiller disse?</p>
+
+      <p>I et Seamless (traditional) CMS kan brukere legge til, oppdatere, og endre innhold samt formatteringen av innholdet uten å trenge forkunnskaper innen HTML/CSS. Dette gjøres enkelt ved bruk av ferdiglagde Templates som gjør det meste av jobben for brukerne. Det er også mulig å installere eksterne plugins som øker nettsidens funksjonalitet.</p>
+
+      <p>I et headless CMS er innholdet separat fra koden som formatterer innholdet. Brukeren trenger bare laste opp innholdet til en database (backend) som sender informasjonen videre via API’s til frontend - typ en nettside, app, smartklokke, mail, osv... Hver av frontend-versjonene har egen kode som automatisk formaterer det rå innholdet fra backend slik at det blir pent uansett skjermstørrelse.</p>
+    </article>
+
   <!--https://www.youtube.com/watch?v=QGfBkYQJf8c-->
   <div class="table-container">
     <div class="cms-table-row">
@@ -50,24 +60,42 @@
     </div>
 
     <div class="cms-table-row">
-      <div class="table-data">CMS 1</div>
-      <div class="table-data">2</div>
-      <div class="table-data">3</div>
-      <div class="table-data">3</div>
+      <div class="table-header">Wordpress</div>
+      <div class="table-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                              and scrambled it to make a type specimen book.</div>
+      <div class="table-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                              and scrambled it to make a type specimen book.</div>
+      <div class="table-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                              and scrambled it to make a type specimen book.</div>
     </div>
 
     <div class="cms-table-row">
-      <div class="table-data">CMS 2</div>
-      <div class="table-data">2</div>
-      <div class="table-data">3</div>
-      <div class="table-data">2</div>
+      <div class="table-header">SquareSpace</div>
+      <div class="table-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                              and scrambled it to make a type specimen book.</div>
+      <div class="table-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                              and scrambled it to make a type specimen book.</div>
+      <div class="table-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                              and scrambled it to make a type specimen book.</div>
     </div>
 
     <div class="cms-table-row">
-      <div class="table-data">CMS 3</div>
-      <div class="table-data">2</div>
-      <div class="table-data">3</div>
-      <div class="table-data">3</div>
+      <div class="table-header">Contentful</div>
+      <div class="table-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                              and scrambled it to make a type specimen book.</div>
+      <div class="table-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                              and scrambled it to make a type specimen book.</div>
+      <div class="table-data">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                              and scrambled it to make a type specimen book.</div>
     </div>
   </div>
   </main>
@@ -83,26 +111,31 @@
   <footer>
     <div class="footer-list-container">
       <ul>
-        <li><h4>Kontakt</h4></li>
+        <li>
+          <h4>Kontakt</h4>
+        </li>
+        <li><a href="#">opptak@hiof.no</a></li>
+        <li><a href="#">studier@hiof.no</a></li>
+        <li><a href="#">postmottak@hiof.no</a></li>
+        <li><a href="#">69 60 80 00</a></li>
+      </ul>
+      <ul>
+        <li>
+          <h4>Lorem Ipsum</h4>
+        </li>
         <li><a href="#">Lorem Ipsum</a></li>
         <li><a href="#">Lorem Ipsum</a></li>
         <li><a href="#">Lorem Ipsum</a></li>
         <li><a href="#">Lorem Ipsum</a></li>
       </ul>
       <ul>
-        <li><h4>Lorem Ipsum</h4></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-      </ul>
-      <ul>
-        <li><h4>Hjelp</h4></li>
+        <li>
+          <h4>Hjelp</h4>
+        </li>
         <li><a href="#">Kattespørsmål</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
+        <li><a href="#">Guides</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">#Donate</a></li>
 
       </ul>
     </div>
