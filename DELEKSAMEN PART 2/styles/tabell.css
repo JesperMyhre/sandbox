@@ -1,4 +1,5 @@
-.table-container {
+.table-container,
+.table-container-mobile {
   background-color: white;
   border: 1px solid black;
   max-width: 80%;
@@ -20,4 +21,22 @@
 
 .table-header {
   white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .table-container-mobile {
+    display: block!important;
+  }
+  .table-container {
+    display: none!important;
+  }
+
+  .cms-table-row {
+    display: grid;
+    grid-template-columns: 14vw 1fr;
+  }
+  .uuseo-table-row {
+    display: grid;
+    grid-template-columns: 14vw 1fr;
+  }
 }
