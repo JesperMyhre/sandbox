@@ -1,5 +1,6 @@
 .table-container,
-.table-container-mobile {
+.table-container-mobile,
+.table-container-uuseo {
   background-color: white;
   border: 1px solid black;
   max-width: 80%;
@@ -11,7 +12,7 @@
 }
 .uuseo-table-row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 14vw 1fr 1fr;
 }
 .table-data,
 .table-header {
@@ -32,10 +33,6 @@
   }
 
   .cms-table-row {
-    display: grid;
-    grid-template-columns: 14vw 1fr;
-  }
-  .uuseo-table-row {
     display: grid;
     grid-template-columns: 14vw 1fr;
   }
