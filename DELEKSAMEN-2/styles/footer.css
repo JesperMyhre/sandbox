@@ -31,3 +31,25 @@ footer {
   line-height: 30px;
   color: white;
 }
+
+/*https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
+#toppknapp {
+  display: none;
+  position: fixed; 
+  padding: 10px;
+  bottom: 20px;
+  right: 30px;
+
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: orange;
+  color: white;
+  font-size: 18px;
+  
+  cursor: pointer;
+  z-index: 99; 
+}
+
+#toppknapp:hover {
+  background-color: #555;
+}

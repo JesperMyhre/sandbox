@@ -32,6 +32,8 @@ nav {
   object-fit: cover;
   margin-top: 5px;
 
+
+  /*fra forelesning*/
   transform: translateX(-500px);
   animation-name: flyingText;
   animation-duration: 0.8s;

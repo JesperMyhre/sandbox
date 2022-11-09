@@ -52,10 +52,16 @@ aside {
 aside ul {
   display: flex;
   flex-direction: column;
-
-  background-color: rgb(201, 136, 14);
+  
+  color: white;
+  background-color: #3d3d3d;
   margin-right: 40px;
   padding: 10px 40px
+}
+
+aside a {
+  color: white;
+  list-style-type: none;
 }
 
 @media (min-width: 900px) {
@@ -64,8 +70,8 @@ aside ul {
     grid-template-columns: 1fr 20vw;
     grid-template-rows: auto auto;
     grid-template-areas: "header header"
-      "main aside"
-      "footer footer";
+                          "main aside"
+                          "footer footer";
 
     min-height: 100vh;
   }
@@ -95,9 +101,9 @@ aside ul {
   .main-page-container {
     display: grid;
     grid-template-areas: "header"
-      "main"
-      "aside"
-      "footer";
+                          "main"
+                          "aside"
+                          "footer";
     grid-template-columns: 1fr;
     min-height: 100vh;
   }
