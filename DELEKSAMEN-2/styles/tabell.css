@@ -10,6 +10,10 @@
   display: grid;
   grid-template-columns: 14vw 1fr 1fr 1fr;
 }
+.analyse-table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .uuseo-table-row {
   display: grid;
   grid-template-columns: 14vw 1fr 1fr;

@@ -6,17 +6,17 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Home" content="Landingsside for alt som er tøft og kult">
+  <meta name="description" content="Bla deg gjennom Jesper's nettside. Full av informasjon om CMS, UU, og SEO!">
   <title>Hjem</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="../styles/general.css">
   <link rel="stylesheet" type="text/css" href="../styles/header.css">
   <link rel="stylesheet" type="text/css" href="../styles/main.css">
   <link rel="stylesheet" type="text/css" href="../styles/footer.css">
-  <link rel="stylesheet" type="text/css" href="../styles/general.css">
 
   <link href="../font/css/fontawesome.css" rel="stylesheet">
   <link href="../font/css/brands.css" rel="stylesheet">
@@ -28,10 +28,10 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
     <header>
       <video autoplay muted loop class="banner">
         <!--Kilde til video: https://www.youtube.com/watch?v=HxsWDcNDCcc-->
-        <source src="../images/videoplayback.mp4" type="video/mp4">
+        <source src="../images/banner-video.mp4" type="video/mp4" alt="Bannervideo av katter">
       </video>
       <nav>
-        <a href="index.html"><img class="logo-image" src="../images/logo.png" alt="Logobilde til nettstedet"></a>
+        <a href="index.html"><img class="logo-image" src="../images/logo.png" aria-label="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
         <ul id="nav-menu" class="nav-menu" style="display: none;">
           <li><a href="index.html">Hjem</a></li>
           <li><a href="CMS.html">CMS</a></li>
@@ -55,13 +55,14 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
 
     <main>
       <div class="social-bar">
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.hiof.no%2Fom%2Fkontaktinformasjon%2Findex.html" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://twitter.com/intent/tweet?text=Kontaktinformasjon&url=https%3A%2F%2Fwww.hiof.no%2Fom%2Fkontaktinformasjon%2Findex.html" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://no.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-        <a href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.hiof.no%2Fom%2Fkontaktinformasjon%2Findex.html" target="_blank" aria-label="Deleknapp til Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/intent/tweet?text=Kontaktinformasjon&url=https%3A%2F%2Fwww.hiof.no%2Fom%2Fkontaktinformasjon%2Findex.html" target="_blank" aria-label="Deleknapp til Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://no.pinterest.com" target="_blank" aria-label="Deleknapp til Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank" aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
       </div>
 
-      <article class="article-card1">
+      <a class="article-card" href="CMS.html">
+        <article>
         <img class="article-thumbnail" src="../images/happy!.jpg" alt="Artikkelbilde om CMS">
         <div class="article-info">
           <h2>CMS</h2>
@@ -75,29 +76,32 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
               typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
           </p>
-          <a class="mer-info-lenke" href="CMS.html">Mer info</a>
         </div>
       </article>
+      </a>
 
-      <article>
-        <img class="article-thumbnail" src="../images/images.jpg" alt="Artikkelbilde om Analyse">
+      <a class="article-card" href="Analyse.html">
+        <article>
+        <img class="article-thumbnail" src="../images/images2.jpeg" alt="Artikkelbilde om Analyse">
         <div class="article-info">
           <h2>Analyse</h2>
           <p>nkjnfds is simplynewhbgkengfw of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s.</p>
-          <a class="mer-info-lenke" href="Analyse.html">Mer info</a>
         </div>
       </article>
+    </a>
 
-      <article>
-        <img class="article-thumbnail" src="../images/deviouscat.jpg" alt="Artikkelbilde om UU vs SEO">
-        <div class="article-info">
-          <h2>UU vs SEO</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s.</p>
-          <a class="mer-info-lenke" href="UUvsSEO.html">Mer info</a>
+
+      <a class="article-card" href="UUvsSEO.html">
+        <article>
+          <img class="article-thumbnail" src="../images/deviouscat.jpg" alt="Artikkelbilde om UU vs SEO">
+          <div class="article-info">
+            <h2>UU vs SEO</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s.</p>
         </div>
       </article>
+    </a>
 
       <button onclick="topFunction()" id="toppknapp" title="Tilbake til toppen">Tilbake til toppen  </button>
     </main>
@@ -144,6 +148,5 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
     </footer>
   </div>
   <script src="../javascript/scripts.js"></script>
-
 </body>
 </html>
