@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="../styles/header.css">
-  <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  <link rel="stylesheet" type="text/css" href="../styles/innholdsside.css">
   <link rel="stylesheet" type="text/css" href="../styles/footer.css">
   <link rel="stylesheet" type="text/css" href="../styles/general.css">
   <link rel="stylesheet" type="text/css" href="../styles/tabell.css">
@@ -46,6 +46,123 @@
       <a href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank" aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
     </div>
 
+    <section>
+      <h1>Analyse</h1>
+      <article class="analyse-artikkelkort">
+        <h2>Oversikt</h2>
+        <img src="../images/oversikt-analyse.png" alt="Oversikt over Lighthouse Analyse">
+        <p></p>
+        <img src="../images/analyse-error-kontrast.png" alt="Bilde av kontrast-error">
+        <p>ERROR: Enkelte lenker/knapper har lav kontrast mellom skrift og bakgrunnsfarge.</p>
+        <p>LØSNING: Endret fargen på tekst og bakgrunn for bedre kontrast.</p>
+        <img src="../images/analyse-error-header.png" src="Bilde av header-error">
+        <p>ERROR: Header-elementene er ikke brukt i konsekvent rekkefølge.</p>
+        <p>LØSNING: Korrigert bruk av Header slik at det blir konsekvent og Google liker meg.</p>
+        <img src="../images/analyse-error-metabeskrivelse.png" alt="Bilde av meta-error">
+        <p>ERROR 1: Siden mangler meta-beskrivelse.</p>
+        <p>LØSNING 1: Lagt til meta-beskrivelse på alle sider.</p>
+        <p>ERROR 2: Lenkene i artikkelkortene mangler beskrivelse</p>
+        <p>LØSNING 2: Gjort om hele artikkelkortet til en klikkbar lenke. Artiklene har nøkkelord som beskriver innholdet.</p>
+        <img src="../images/analyse-error-crawl.png" alt="Bilde av crawl-error">
+        <p>ERROR: Tom lenke med annen funksjon slo ut på Analyseverktøy.</p>
+        <p>LØSNING: Endret lenken til en knapp.</p>
+        <img src="../images/analyse-error-aria-attributes.png" alt="Bilde av aria-attrubute-error" style="display: block;">
+        <img src="../images/analyse-error-social-aria.png" alt="Bilde av aria-error på sosialbaren">
+        <p>ERROR: Lenkene har ikke beskrivende tekst som kan benyttes av f.eks. talesyntese.</p>
+        <p>LØSNING: Lagt til aria-attribute på lenkene som beskriver funksjon.</p>
+        <img src="../images/">
+      </article>
+    </section>
+
+    
+    <div class="table-container">
+      <!--Fikse styling her!!!!-->
+        <div class="analyse-table-row" style="background-color: lightpink; font-weight: bold;">
+          <div class="table-data">Error</div>
+          <div class="table-data">Før</div>
+          <div class="table-data">Etter</div>
+        </div>
+        <div class="analyse-table-row">
+          <div class="table-data">Lav Kontrast</div>
+          <div class="table-data">
+            <ul>
+              <li>Hvit tekst på oransj bakgrunn</li>
+            </ul>
+          </div>
+          <div class="table-data">
+            <ul>
+              <li>Hvit tekst på grå bakgrunn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="analyse-table-row">
+          <div class="table-data">Header</div>
+          <div class="table-data">
+            <ul>
+              <li>Header-elementene var ikke satt i konsekvent rekkefølge.</li>
+            </ul>
+          </div>
+          <div class="table-data">
+            <ul>
+              <li>Satt Header-elementene i konsekvent rekkefølge.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="analyse-table-row">
+          <div class="table-data">Meta-beskrivelse</div>
+          <div class="table-data">
+            <ul>
+              <li>Manglet meta-beskrivelse på de fleste sidene.</li>
+            </ul>
+          </div>
+          <div class="table-data">
+            <ul>
+              <li>Lagt til meta-beskrivelse på alle sider.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="analyse-table-row">
+          <div class="table-data">Lenker uten beskrivelse</div>
+          <div class="table-data">
+            <ul>
+              <li>Lenkene i artikkelkortene mangler beskrivelse.</li>
+            </ul>
+          </div>
+          <div class="table-data">
+            <ul>
+              <li>Gjort om hele artikkelkortet til en klikkbar lenke. Artiklene har nøkkelord som beskriver innholdet.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="analyse-table-row">
+          <div class="table-data">Ikke crawlable lenke</div>
+          <div class="table-data">
+            <ul>
+              <li>Tom lenke med annen funksjon er ikke crawlable.</li>
+            </ul>
+          </div>
+          <div class="table-data">
+            <ul>
+              <li>Endret lenken til en knapp.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="analyse-table-row">
+          <div class="table-data">Lenker uten navn</div>
+          <div class="table-data">
+            <ul>
+              <li>Lenkene har ikke beskrivende tekst som kan benyttes av f.eks. talesyntese.</li>
+            </ul>
+          </div>
+          <div class="table-data">
+            <ul>
+              <li>Lagt til aria-attribute på lenkene som beskriver funksjon.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
     <div class="table-container">
       <div class="analyse-table-row">
@@ -113,9 +230,7 @@
         <div class="table-data">A</div>
         <div class="table-data">Ja</div>
       </div>
-      
-
-
+    </div>
   </main>
 
   <!--<aside>

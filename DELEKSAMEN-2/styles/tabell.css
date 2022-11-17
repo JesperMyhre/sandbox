@@ -3,7 +3,7 @@
 .table-container-uuseo {
   background-color: white;
   border: 1px solid black;
-  max-width: 80%;
+  width: 600px;
   margin: 25px auto;
 }
 .cms-table-row {
@@ -12,7 +12,7 @@
 }
 .analyse-table-row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 17.5vw 1fr 1fr;
 }
 .uuseo-table-row {
   display: grid;
@@ -21,22 +21,25 @@
 .table-data,
 .table-header {
   border: 1px solid black;
-  padding: 10px 15px;
+  padding: 5px 10px;
 }
 
 .table-header h2,
 .table-header h3 {
-  white-space: nowrap;
   font-weight: 400;
   font-size: 16px;
   margin: 0;
 }
 
+.table-data ul {
+  padding-left: 15px;
+}
+
 @media (max-width: 900px) {
-  .table-container-mobile {
+  .cms-table-container-mobile {
     display: block!important;
   }
-  .table-container {
+  .cms-table-container {
     display: none!important;
   }
 
