@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
+  <title>Analyse</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="../styles/header.css">
+  <link rel="stylesheet" type="text/css" href="../styles/innholdsside.css">
+  <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+  <link rel="stylesheet" type="text/css" href="../styles/general.css">
+  <link rel="stylesheet" type="text/css" href="../styles/tabell.css">
+
+  <link href="../font/css/fontawesome.css" rel="stylesheet">
+  <link href="../font/css/brands.css" rel="stylesheet">
+  <link href="../font/css/solid.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-page-container">
+  <header>
+    <nav>
+      <a href="index.html"><img class="logo-image" src="../images/logo.png" aria-label="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
+      <ul id="nav-menu" class="nav-menu" style="display: none;">
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="CMS.html">CMS</a></li>
+        <li><a href="Analyse.html">Analyse</a></li>
+        <li><a href="UUvsSEO.html">UU vs SEO</a></li>
+        <li><a class="kontakt" href="kontaktoss.html">Kontakt oss</a></li>
+      </ul>
+      <button class="hamburger-icon" onclick="navMenu()"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="social-bar">
+      <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.hiof.no%2Fom%2Fkontaktinformasjon%2Findex.html" target="_blank" aria-label="Deleknapp til Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/intent/tweet?text=Kontaktinformasjon&url=https%3A%2F%2Fwww.hiof.no%2Fom%2Fkontaktinformasjon%2Findex.html" target="_blank" aria-label="Deleknapp til Twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://no.pinterest.com" target="_blank" aria-label="Deleknapp til Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank" aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  
+
+    <div class="table-container">
+      <div class="analyse-table-row">
+        <div class="table-data">Retningslinjer</div>
+        <div class="table-data">Nivå</div>
+        <div class="table-data">Dekket?</div>
+      </div>
+      <div class="analyse-table-row">
+        <div class="table-data">Tekstalternativer</div>
+        <div class="table-data">A</div>
+        <div class="table-data">Ja (A)</div>
+      </div>
+      <div class="analyse-table-row">
+        <div class="table-data">Alternativer for tidsbaserte medier</div>
+        <div class="table-data">A/AA/AAA</div>
+        <div class="table-data"></div>
+      </div>
+      <div class="analyse-table-row">
+        <div class="table-data">Innhold kan tilpasses</div>
+        <div class="table-data">A</div>
+        <div class="table-data">Ja</div>
+      </div>
+      <div class="analyse-table-row">
+        <div class="table-data">Innhold er identifiserbar</div>
+        <div class="table-data">A/AA/AAA</div>
+        <div class="table-data">Ja</div>
+      </div>
+      <div class="analyse-table-row">
+        <div class="table-data">Tastaturnavigering</div>
+        <div class="table-data">A/AAA</div>
+        <div class="table-data">Ja</div>
+      </div>
+      <div class="analyse-table-row">
+        <div class="table-data">Nok tid</div>
+        <div class="table-data">A/AAA</div>
+        <div class="table-data">Ja</div>
+      </div>
+      <div class="analyse-table-row">
+        <div class="table-data">Unngå anfall</div>
+        <div class="table-data">A/AAA</div>
+        <div class="table-data">Ja</div>
+      </div>
+      <div class="analyse-table-row">
+        <div class="table-data">Navigerbar</div>
+        <div class="table-data">A/AA/AAA</div>
+        <div class="table-data">Ja</div>
+      </div>
+      <div class="analyse-table-row">
+        <div class="table-data">Leselig og forståelig</div>
+        <div class="table-data">A/AA/AAA</div>
+        <div class="table-data">Ja</div>
+      </div>
+      <div class="analyse-table-row">
+        <div class="table-data">Forutsigbar</div>
+        <div class="table-data">A/AA/AAA</div>
+        <div class="table-data">Ja</div>
+      </div>
+      <div class="analyse-table-row">
+        <div class="table-data">Unngå og rette opp feil</div>
+        <div class="table-data">A/AA/AAA</div>
+        <div class="table-data">Ja</div>
+      </div>
+      <div class="analyse-table-row">
+        <div class="table-data">Kompatibilitet</div>
+        <div class="table-data">A</div>
+        <div class="table-data">Ja</div>
+      </div>
+    </div>
+  </main>
+
+  <!--<aside>
+    <ul>
+      <li><a class="aside-lenke" href="#">Lenke</a></li>
+      <li><a class="aside-lenke" href="#">Lenke</a></li>
+      <li><a class="aside-lenke" href="#">Lenke</a></li>
+    </ul>
+  </aside>-->
+  <button onclick="topFunction()" id="toppknapp" title="Tilbake til toppen">Tilbake til toppen</button>
+
+
+  <footer>
+    <div class="footer-list-container">
+      <ul>
+        <li><h3>Kontakt</h3></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+      </ul>
+      <ul>
+        <li><h3>Lorem Ipsum</h3></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+      </ul>
+      <ul>
+        <li><h3>Hjelp</h3></li>
+        <li><a href="#">Kattespørsmål</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+
+      </ul>
+    </div>
+  </footer>
+</div>
+  <script src="../javascript/scripts.js"></script>
+</body>
+</html>

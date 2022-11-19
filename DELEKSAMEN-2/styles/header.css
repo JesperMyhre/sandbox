@@ -127,7 +127,7 @@ header nav ul li a:hover::before {
   #nav-menu a {
     margin-right: 40px;
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.2rem;
   }
 
