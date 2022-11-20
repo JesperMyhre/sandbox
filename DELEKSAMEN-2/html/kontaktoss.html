@@ -15,7 +15,6 @@
   <link rel="stylesheet" type="text/css" href="../styles/innholdsside.css">
   <link rel="stylesheet" type="text/css" href="../styles/footer.css">
   <link rel="stylesheet" type="text/css" href="../styles/general.css">
-  <link rel="stylesheet" type="text/css" href="../styles/kontakt.css">
 
   <link href="../font/css/fontawesome.css" rel="stylesheet">
   <link href="../font/css/brands.css" rel="stylesheet">
@@ -23,7 +22,6 @@
 </head>
 
 <body>
-  <div class="main-page-container">
     <header>
       <nav>
         <a href="index.html"><img class="logo-image" src="../images/logo.png" aria-label="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
@@ -45,20 +43,51 @@
         <a href="https://no.pinterest.com" target="_blank" aria-label="Deleknapp til Pinterest"><i class="fa-brands fa-pinterest"></i></a>
         <a href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank" aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
       </div>
-
-      <div class="kontaktskjema">
-        <h1>Kontakt</h1>
-        <div>
-          <input class="kontakt-input" type="text" placeholder="Fornavn" alt="Inputfelt fornavn">
-          <input class="kontakt-input" type="text" placeholder="Etternavn">
+      <section>
+        <div class="info-container">
+          <div>
+            <h2>Kontaktinformasjon</h2>
+            <p>Sentralbord: 69 60 80 00</p>
+            <p>Epost: <a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></p>
+            <p>Faks: 69 60 80 01</p>
+          </div>
+          <div>
+            <h2>Postadresse</h2>
+            <p>Høgskolen i Østfold</p>
+            <p>Postboks 700</p>
+            <p>1757 Halden</p>
+          </div>
+          <div>
+            <h2>Postpakkeadresse</h2>
+            <p>Høgskolen i Østfold</p>
+            <p>B R A veien 4</p>
+            <p>1757 Halden</p>
+          </div>
         </div>
-        <input class="kontakt-input" type="email" placeholder="E-post">
-        <input class="kontakt-input" type="number" placeholder="Tlf-nummer">
-        <textarea></textarea>
-        <button class="kontakt-button" type="submit">Send inn</button>
+        <div class="map-and-info">
+          <!--https://maps-generator.com/-->
+          <iframe width=400px height=600px frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=H%C3%B8yskolen%20i%20%C3%98stfold%20Halden+(H%C3%B8yskolen%20i%20%C3%98stfold)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+          <div class="kontaktskjema">
+            <h1>Kontaktskjema</h1>
+            <label for="fornavn">Fornavn</label>
+            <input class="kontakt-input" type="text" id="fornavn" name="fornavn" placeholder="Fornavn">
+  
+            <label for="etternavn">Etternavn</label>
+            <input class="kontakt-input" type="text" id="etternavn" name="etternavn" placeholder="Etternavn">
+  
+            <label for="email">Email</label>
+            <input class="kontakt-input" type="email" id="email" name="email" placeholder="E-post">
+  
+            <label for="nummer">Nummer</label>
+            <input class="kontakt-input" type="number" id="nummer" name="nummer" placeholder="Tlf-nummer">
+  
+            <label for="melding">Skriv tilbakemelding her!</label>
+            <textarea id="melding" name="melding" placeholder="SPSPS" style="height: 200px;"></textarea>
+            
+            <input class="kontakt-button" type="submit" value="submit">
+          </div>
       </div>
-      <!--https://maps-generator.com/-->
-      <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=H%C3%B8yskolen%20i%20%C3%98stfold%20Halden+(H%C3%B8yskolen%20i%20%C3%98stfold)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
+      </section>
     </main>
 
     <!--<aside>
@@ -103,7 +132,6 @@
       </ul>
     </div>
   </footer>
-  </div>
   <script src="../javascript/scripts.js"></script>
 </body>
 
