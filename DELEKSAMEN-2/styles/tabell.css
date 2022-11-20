@@ -1,9 +1,11 @@
 .table-container,
 .table-container-mobile,
-.table-container-uuseo {
+.table-container-mobile-cms,
+.table-container-uuseo,
+.table-container-cms {
   background-color: white;
   border: 1px solid black;
-  width: 600px;
+  max-width: 80%;
   margin: 25px auto;
 }
 .cms-table-row {
@@ -36,10 +38,10 @@
 }
 
 @media (max-width: 900px) {
-  .cms-table-container-mobile {
+  .table-container-mobile-cms {
     display: block!important;
   }
-  .cms-table-container {
+  .table-container-cms {
     display: none!important;
   }
 

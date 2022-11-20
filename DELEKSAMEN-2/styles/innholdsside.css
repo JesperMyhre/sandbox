@@ -1,10 +1,5 @@
-main {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-article {
+article,
+section {
   max-width: 80%;
   margin: 0 auto;
   background-color: white;
@@ -30,3 +25,37 @@ header {
    max-width: 250px;
    min-width: 80%;
  }
+
+ .kontaktskjema {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+}
+
+.kontakt-input {
+  margin-bottom: 10px;
+  border-radius: 50px;
+  border: 0 solid;
+  padding: 10px 5px;
+}
+
+.kontakt-button {
+  width: 120px;
+  background-color: orange;
+  color: white;
+  border: 0 white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.map-and-info {
+  display: flex;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  border-bottom: 0.5px solid black;
+}
