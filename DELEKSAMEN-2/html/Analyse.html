@@ -2,6 +2,20 @@
 <html lang="nb">
 
 <head>
+  <!--Twitter-->
+  <meta name="twitter:title" content="Analyse">
+  <meta name="twitter:url" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/html/Analyse.html">
+  <meta name="twitter:description" content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
+  <meta name="twitter:image" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/images/oversikt-analyse.png">
+  <meta name="twitter:image:alt" content="Bilde av Analyse">
+
+  <!--Facebook-->
+  <meta property="og:title" content="Analyse">
+  <meta property="og:url" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/html/Analyse.html">
+  <meta property="og:description" content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
+  <meta property="og:image" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/images/oversikt-analyse.png">
+  <meta property="og:image:alt" content="Bilde av Analyse">
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
@@ -36,7 +50,7 @@
         <li><a href="UUvsSEO.html">UU vs SEO</a></li>
         <li><a class="kontakt" href="kontaktoss.html">Kontakt oss</a></li>
       </ul>
-      <button class="hamburger-icon" onclick="navMenu()"><i class="fa-solid fa-bars"></i></button>
+      <button aria-label="Hamburger-knapp" class="hamburger-icon" onclick="navMenu()"><i class="fa-solid fa-bars"></i></button>
     </nav>
   </header>
 
@@ -55,24 +69,48 @@
         <img src="../images/oversikt-analyse.png" alt="Oversikt over Lighthouse Analyse">
         <p></p>
         <img src="../images/analyse-error-kontrast.png" alt="Bilde av kontrast-error">
-        <p>ERROR: Enkelte lenker/knapper har lav kontrast mellom skrift og bakgrunnsfarge.</p>
-        <p>LØSNING: Endret fargen på tekst og bakgrunn for bedre kontrast.</p>
-        <img src="../images/analyse-error-header.png" src="Bilde av header-error">
-        <p>ERROR: Header-elementene er ikke brukt i konsekvent rekkefølge.</p>
-        <p>LØSNING: Korrigert bruk av Header slik at det blir konsekvent og Google liker meg.</p>
+        <div class="tiltak-container">
+          <p>ERROR: Enkelte lenker/knapper har lav kontrast mellom skrift og bakgrunnsfarge.</p>
+          <p>LØSNING: Endret fargen på tekst og bakgrunn for bedre kontrast.</p>
+        </div>
+        <img src="../images/analyse-error-header.png" src="Bilde av header-error" alt="Bilde av header-error">
+        <div class="tiltak-container">
+          <p>ERROR: Header-elementene er ikke brukt i konsekvent rekkefølge.</p>
+          <p>LØSNING: Korrigert bruk av Header slik at det blir konsekvent og Google liker meg.</p>
+        </div>
         <img src="../images/analyse-error-metabeskrivelse.png" alt="Bilde av meta-error">
-        <p>ERROR 1: Siden mangler meta-beskrivelse.</p>
-        <p>LØSNING 1: Lagt til meta-beskrivelse på alle sider.</p>
-        <p>ERROR 2: Lenkene i artikkelkortene mangler beskrivelse</p>
-        <p>LØSNING 2: Gjort om hele artikkelkortet til en klikkbar lenke. Artiklene har nøkkelord som beskriver innholdet.</p>
+        <div class="tiltak-container">
+          <p>ERROR 1: Siden mangler meta-beskrivelse.</p>
+          <p>LØSNING 1: Lagt til meta-beskrivelse på alle sider.</p>
+          <p>ERROR 2: Lenkene i artikkelkortene mangler beskrivelse</p>
+          <p>LØSNING 2: Gjort om hele artikkelkortet til en klikkbar lenke. Artiklene har nøkkelord som beskriver innholdet.</p>
+        </div>
         <img src="../images/analyse-error-crawl.png" alt="Bilde av crawl-error">
-        <p>ERROR: Tom lenke med annen funksjon slo ut på Analyseverktøy.</p>
-        <p>LØSNING: Endret lenken til en knapp.</p>
+        <div class="tiltak-container">
+          <p>ERROR: Tom lenke med annen funksjon slo ut på Analyseverktøy.</p>
+          <p>LØSNING: Endret lenken til en knapp.</p>
+        </div>
         <img src="../images/analyse-error-aria-attributes.png" alt="Bilde av aria-attrubute-error" style="display: block;">
         <img src="../images/analyse-error-social-aria.png" alt="Bilde av aria-error på sosialbaren">
-        <p>ERROR: Lenkene har ikke beskrivende tekst som kan benyttes av f.eks. talesyntese.</p>
-        <p>LØSNING: Lagt til aria-attribute på lenkene som beskriver funksjon.</p>
-        <img src="../images/">
+        <div class="tiltak-container">
+          <p>ERROR: Lenkene har ikke beskrivende tekst som kan benyttes av f.eks. talesyntese.</p>
+          <p>LØSNING: Lagt til aria-attribute på lenkene som beskriver funksjon.</p>
+        </div>
+        <img src="../images/analyse-error-aria-knapp.PNG" alt="Bilde av aria-error">
+        <div class="tiltak-container">
+          <p>ERROR: Hamburgerknapp mangler navn brukt av talesynteseverktøy.</p>
+          <p>LØSNING: Lagt til Aria-label som beskriver funksjon.</p>
+        </div>
+        <img src="../images/analyse-error-iframe.PNG" alt="Bilde av Iframe-error">
+        <div class="tiltak-container">
+          <p>ERROR: Iframe-kart har ikke beskrivende tittel.</p>
+          <p>LØSNING: Lagt til title-attribut som beskriver kartet.</p>
+        </div>
+        <img src="../images/analyse-error-sendinnknapp.PNG" alt="Bilde av kontrast-error">
+        <div class="tiltak-container">
+          <p>ERROR: Knapp har for lav kontrast.</p>
+          <p>LØSNING: Endret bakgrunnsfarge til grå for bedre kontrast.v </p>
+        </div>
       </article>
     </section>
 

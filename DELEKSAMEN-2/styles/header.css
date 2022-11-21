@@ -159,7 +159,7 @@ header nav ul li a:hover::before {
     line-height: 40px;
     margin-top: 4rem;
 
-    background-color: orange;
+    background-color: #3d3d3d;
     border: 2px solid white;
     border-radius: 4px;
     list-style: none;
