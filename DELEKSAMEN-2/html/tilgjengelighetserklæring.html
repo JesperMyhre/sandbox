@@ -39,19 +39,31 @@
   </header>
 
   <main>
-    <div class="social-bar">
-      <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.hiof.no%2Fom%2Fkontaktinformasjon%2Findex.html" target="_blank" aria-label="Deleknapp til Facebook"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://twitter.com/intent/tweet?text=Kontaktinformasjon&url=https%3A%2F%2Fwww.hiof.no%2Fom%2Fkontaktinformasjon%2Findex.html" target="_blank" aria-label="Deleknapp til Twitter"><i class="fa-brands fa-twitter"></i></a>
-      <a href="https://no.pinterest.com" target="_blank" aria-label="Deleknapp til Pinterest"><i class="fa-brands fa-pinterest"></i></a>
-      <a href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank" aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-  
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
+    <div class="social-bar">
+      <a tabindex="2" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Ejesperom%2FDELEKSAMEN-2%2Fhtml%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" target="_blank" aria-label="Deleknapp til Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a tabindex="2" href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" data-show-count="false" aria-label="Deleknapp til Twitter"><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><i class="fa-brands fa-twitter"></i></a>
+      <a tabindex="2" href="https://www.pinterest.com/pin/create/button/" target="_blank" aria-label="Deleknapp til Pinterest" count-layout="none"><i class="fa-brands fa-pinterest"></i></a>
+      <a tabindex="2" href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank" aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
     <!--
       1.1.1 - Non-text Content - Level A
+      2.1.1 - Keyboard - Level A
+      2.1.2 - No Keyboard Trap - Level A
+      2.4.2 - Page Titled - Level A
       1.4.3 - Contrast (Minimum) - Level AA
       1.4.5 - Images of Text - Level AA
       1.4.11 - Non-text Contrast - Level AA
+      2.3.2 - Three Flashes - Level AAA
+      2.1.3 - Keyboard (No Exception) - Level AAA
       1.4.6 - Contrast (Enhanced) - Level AAA
       1.4.9 - Images of Text (No Exception) - Level AAA
     -->

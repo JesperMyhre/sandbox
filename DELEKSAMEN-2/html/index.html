@@ -48,13 +48,13 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
         <source src="../images/banner-video.mp4" type="video/mp4" alt="Bannervideo av katter">
       </video>
       <nav>
-        <a href="index.html"><img class="logo-image" src="../images/logo.png" aria-label="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
+        <a tabindex="1" href="index.html"><img class="logo-image" src="../images/logo.png" aria-label="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
         <ul id="nav-menu" class="nav-menu" style="display: none;">
-          <li><a href="index.html">Hjem</a></li>
-          <li><a href="CMS.html">CMS</a></li>
-          <li><a href="Analyse.html">Analyse</a></li>
-          <li><a href="UUvsSEO.html">UU vs SEO</a></li>
-          <li><a class="kontakt" href="kontaktoss.html">Kontakt oss</a></li>
+          <li><a tabindex="1" href="index.html">Hjem</a></li>
+          <li><a tabindex="1" href="CMS.html">CMS</a></li>
+          <li><a tabindex="1" href="Analyse.html">Analyse</a></li>
+          <li><a tabindex="1" href="UUvsSEO.html">UU vs SEO</a></li>
+          <li><a tabindex="1" class="kontakt" href="kontaktoss.html">Kontakt oss</a></li>
         </ul>
       <button aria-label="Hamburger-knapp" class="hamburger-icon" onclick="navMenu()"><i class="fa-solid fa-bars"></i></button>
       </nav>
@@ -65,20 +65,29 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
         <!--https://linuxhint.com/make-button-link-another-page-html/#:~:text=In%20HTML%2C%20a%20button%20link,a%20link%20on%20the%20button.
           buttons inni a gir masse error hos validator, søkte opp dette for å finne en god løsning-->
         <form action="kontaktoss.html">
-          <button class="overlay-button">KONTAKT OSS</button>
+          <button tabindex="1" class="overlay-button">KONTAKT OSS</button>
         </form>
       </div>
     </header>
 
     <main>
+      <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
       <div class="social-bar">
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.hiof.no%2Fom%2Fkontaktinformasjon%2Findex.html" target="_blank" aria-label="Deleknapp til Facebook"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" data-show-count="false" aria-label="Deleknapp til Twitter"><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://no.pinterest.com" target="_blank" aria-label="Deleknapp til Pinterest"><i class="fa-brands fa-pinterest"></i></a>
-        <a href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank" aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a tabindex="2" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Ejesperom%2FDELEKSAMEN-2%2Fhtml%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" target="_blank" aria-label="Deleknapp til Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a tabindex="2" href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" data-show-count="false" aria-label="Deleknapp til Twitter"><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><i class="fa-brands fa-twitter"></i></a>
+        <a tabindex="2" href="https://www.pinterest.com/pin/create/button/" target="_blank" aria-label="Deleknapp til Pinterest" count-layout="none"><i class="fa-brands fa-pinterest"></i></a>
+        <a tabindex="2" href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank" aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
       </div>
 
-      <a class="article-card" href="CMS.html">
+      <a tabindex="1" class="article-card" href="CMS.html">
         <article>
         <img class="article-thumbnail" src="../images/happy!.jpg" alt="Artikkelbilde om CMS">
         <div class="article-info">
@@ -92,7 +101,7 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
       </article>
       </a>
 
-      <a class="article-card" href="Analyse.html">
+      <a tabindex="1" class="article-card" href="Analyse.html">
         <article>
         <img class="article-thumbnail" src="../images/images2.jpeg" alt="Artikkelbilde om Analyse">
         <div class="article-info">
@@ -105,7 +114,7 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
     </a>
 
 
-      <a class="article-card" href="UUvsSEO.html">
+      <a tabindex="1" class="article-card" href="UUvsSEO.html">
         <article>
           <img class="article-thumbnail" src="../images/deviouscat.jpg" alt="Artikkelbilde om UU vs SEO">
           <div class="article-info">
@@ -115,19 +124,15 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
       </article>
     </a>
 
-    <div class="sharing-is-caring">
-      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
-      <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fitstud.hiof.no%2F~jesperom%2FDELEKSAMEN-2%2Fhtml%2F&layout=button_count&size=small&width=77&height=20&appId" width="77" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-    </div>
+      <button tabindex="3" onclick="topFunction()" id="toppknapp" title="Tilbake til toppen">Tilbake til toppen</button>
 
-      <button onclick="topFunction()" id="toppknapp" title="Tilbake til toppen">Tilbake til toppen</button>
-    </main>
+   </main>
 
     <aside>
       <ul>
-        <li><a class="aside-lenke" href="#">Lenke</a></li>
-        <li><a class="aside-lenke" href="#">Lenke</a></li>
-        <li><a class="aside-lenke" href="#">Lenke</a></li>
+        <li><a tabindex="2" class="aside-lenke" href="#">Lenke</a></li>
+        <li><a tabindex="2" class="aside-lenke" href="#">Lenke</a></li>
+        <li><a tabindex="2" class="aside-lenke" href="#">Lenke</a></li>
       </ul>
     </aside>
 
@@ -138,28 +143,28 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
           <li>
             <h3>Kontakt</h3>
           </li>
-          <li><a href="#">opptak@hiof.no</a></li>
-          <li><a href="#">studier@hiof.no</a></li>
-          <li><a href="#">postmottak@hiof.no</a></li>
-          <li><a href="#">69 60 80 00</a></li>
+          <li><a tabindex="3" href="#">opptak@hiof.no</a></li>
+          <li><a tabindex="3" href="#">studier@hiof.no</a></li>
+          <li><a tabindex="3" href="#">postmottak@hiof.no</a></li>
+          <li><a tabindex="3" href="#">69 60 80 00</a></li>
         </ul>
         <ul>
           <li>
             <h3>Lorem Ipsum</h3>
           </li>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
+          <li><a tabindex="3" href="#">Lorem Ipsum</a></li>
+          <li><a tabindex="3" href="#">Lorem Ipsum</a></li>
+          <li><a tabindex="3" href="#">Lorem Ipsum</a></li>
+          <li><a tabindex="3" href="#">Lorem Ipsum</a></li>
         </ul>
         <ul>
           <li>
             <h3>Hjelp</h3>
           </li>
-          <li><a href="#">Kattespørsmål</a></li>
-          <li><a href="#">Guides</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">#Donate</a></li>
+          <li><a tabindex="3" href="#">Kattespørsmål</a></li>
+          <li><a tabindex="3" href="#">Guides</a></li>
+          <li><a tabindex="3" href="#">FAQ</a></li>
+          <li><a tabindex="3" href="#">#Donate</a></li>
 
         </ul>
       </div>
