@@ -41,77 +41,90 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
 </head>
 
 <body>
-  <div class="main-page-container">
-    <header>
-      <video autoplay muted loop class="banner">
-        <!--Kilde til video: https://www.youtube.com/watch?v=HxsWDcNDCcc-->
-        <source src="../images/banner-video.mp4" type="video/mp4" alt="Bannervideo av katter">
-      </video>
-      <nav>
-        <a tabindex="1" href="index.html"><img class="logo-image" src="../images/logo.png" aria-label="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
-        <ul id="nav-menu" class="nav-menu" style="display: none;">
-          <li><a tabindex="1" href="index.html">Hjem</a></li>
-          <li><a tabindex="1" href="CMS.html">CMS</a></li>
-          <li><a tabindex="1" href="Analyse.html">Analyse</a></li>
-          <li><a tabindex="1" href="UUvsSEO.html">UU vs SEO</a></li>
-          <li><a tabindex="1" class="kontakt" href="kontaktoss.html">Kontakt oss</a></li>
-        </ul>
-      <button aria-label="Hamburger-knapp" class="hamburger-icon" onclick="navMenu()"><i class="fa-solid fa-bars"></i></button>
-      </nav>
-      <div class="banner-overlay-container">
-        <h1>Mjau Mjau</h1>
-        <p>Mjau mjau purr purr, mjuamjau mjaumjaumjaumaju mjau mjau purr mjau!</p>
-        <p>Interessert? Ta kontakt da vel!</p>
-        <!--https://linuxhint.com/make-button-link-another-page-html/#:~:text=In%20HTML%2C%20a%20button%20link,a%20link%20on%20the%20button.
-          buttons inni a gir masse error hos validator, søkte opp dette for å finne en god løsning-->
-        <form action="kontaktoss.html">
-          <button tabindex="1" class="overlay-button">KONTAKT OSS</button>
-        </form>
-      </div>
-    </header>
+  <header>
+    <video autoplay muted loop class="banner">
+      <!--Kilde til video: https://www.youtube.com/watch?v=HxsWDcNDCcc-->
+      <source src="../images/banner-video.mp4" type="video/mp4" alt="Bannervideo av katter">
+    </video>
+    <nav>
+      <a tabindex="1" href="index.html"><img class="logo-image" src="../images/logo.png"
+          aria-label="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
+      <ul id="nav-menu" class="nav-menu" style="display: none;">
+        <li><a tabindex="1" href="index.html">Hjem</a></li>
+        <li><a tabindex="1" href="CMS.html">CMS</a></li>
+        <li><a tabindex="1" href="Analyse.html">Analyse</a></li>
+        <li><a tabindex="1" href="UUvsSEO.html">UU vs SEO</a></li>
+        <li><a tabindex="1" class="kontakt" href="kontaktoss.html">Kontakt oss</a></li>
+      </ul>
+      <button aria-label="Hamburger-knapp" class="hamburger-icon" onclick="navMenu()"><i
+          class="fa-solid fa-bars"></i></button>
+    </nav>
+    <div class="banner-overlay-container">
+      <h1>Mjau Mjau</h1>
+      <p>Mjau mjau purr purr, mjuamjau mjaumjaumjaumaju mjau mjau purr mjau!</p>
+      <p>Interessert? Ta kontakt da vel!</p>
+      <!--https://linuxhint.com/make-button-link-another-page-html/#:~:text=In%20HTML%2C%20a%20button%20link,a%20link%20on%20the%20button.
+            buttons inni a gir masse error hos validator, søkte opp dette for å finne en god løsning-->
+      <form action="kontaktoss.html">
+        <button tabindex="1" class="overlay-button">KONTAKT OSS</button>
+      </form>
+    </div>
+  </header>
 
+  <div class="main-page-container">
     <main>
       <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-        fjs.parentNode.insertBefore(js, fjs);
+      <script>(function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+          fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
 
       <div class="social-bar">
-        <a tabindex="2" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Ejesperom%2FDELEKSAMEN-2%2Fhtml%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" target="_blank" aria-label="Deleknapp til Facebook"><i class="fa-brands fa-facebook"></i></a>
-        <a tabindex="2" href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" data-show-count="false" aria-label="Deleknapp til Twitter"><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><i class="fa-brands fa-twitter"></i></a>
-        <a tabindex="2" href="https://www.pinterest.com/pin/create/button/" target="_blank" aria-label="Deleknapp til Pinterest" count-layout="none"><i class="fa-brands fa-pinterest"></i></a>
-        <a tabindex="2" href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank" aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a tabindex="2"
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Ejesperom%2FDELEKSAMEN-2%2Fhtml%2F&amp;src=sdkpreparse"
+          class="fb-xfbml-parse-ignore" target="_blank" aria-label="Deleknapp til Facebook"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a tabindex="2" href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" data-show-count="false"
+          aria-label="Deleknapp til Twitter">
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><i
+            class="fa-brands fa-twitter"></i>
+        </a>
+        <a tabindex="2" href="https://www.pinterest.com/pin/create/button/" target="_blank"
+          aria-label="Deleknapp til Pinterest" count-layout="none"><i class="fa-brands fa-pinterest"></i></a>
+        <a tabindex="2" href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank"
+          aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
       </div>
 
       <a tabindex="1" class="article-card" href="CMS.html">
         <article>
-        <img class="article-thumbnail" src="../images/happy!.jpg" alt="Artikkelbilde om CMS">
-        <div class="article-info">
-          <h2>CMS</h2>
-          <p>Et CMS, eller Content Management System, er et system som brukes til å planlegge, oppdatere, tilpasse, og publisere innhold på nettsider og andre kanaler. Et CMS egner seg godt for både enkeltpersoner og store bedrifter som vil ha personaliserte nettsider uten at det koster for mye.
-            <span class="max-info" style="display: none;">Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-          </p>
-        </div>
-      </article>
+          <img class="article-thumbnail" src="../images/happy!.jpg" alt="Artikkelbilde om CMS">
+          <div class="article-info">
+            <h2>CMS</h2>
+            <p>Et CMS, eller Content Management System, er et system som brukes til å planlegge, oppdatere, tilpasse, og
+              publisere innhold på nettsider og andre kanaler. Et CMS egner seg godt for både enkeltpersoner og store
+              bedrifter som vil ha personaliserte nettsider uten at det koster for mye.
+              <span class="max-info" style="display: none;">Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+            </p>
+          </div>
+        </article>
       </a>
 
       <a tabindex="1" class="article-card" href="Analyse.html">
         <article>
-        <img class="article-thumbnail" src="../images/images2.jpeg" alt="Artikkelbilde om Analyse">
-        <div class="article-info">
-          <h2>Analyse</h2>
-          <p>
-            Les alt om Analysen av dette nettstedet.
-          </p>
-        </div>
-      </article>
-    </a>
+          <img class="article-thumbnail" src="../images/images2.jpeg" alt="Artikkelbilde om Analyse">
+          <div class="article-info">
+            <h2>Analyse</h2>
+            <p>
+              Les alt om Analysen av dette nettstedet.
+            </p>
+          </div>
+        </article>
+      </a>
 
 
       <a tabindex="1" class="article-card" href="UUvsSEO.html">
@@ -119,57 +132,59 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc-->
           <img class="article-thumbnail" src="../images/deviouscat.jpg" alt="Artikkelbilde om UU vs SEO">
           <div class="article-info">
             <h2>UU vs SEO</h2>
-            <p>UU står for Universell Utforming, og går ut på å designe tjenester som er tilgjengelig for alle uavhengig av deres omstendigheter. SEO eller søkemotoroptimalisering er viktig for at nettsiden din skal være lett å oppdage for søkere ved bruk av søkemotorer som Google, Bing, og DuckDuckGo.</p>
-        </div>
-      </article>
-    </a>
+            <p>UU står for Universell Utforming, og går ut på å designe tjenester som er tilgjengelig for alle uavhengig
+              av deres omstendigheter. SEO eller søkemotoroptimalisering er viktig for at nettsiden din skal være lett å
+              oppdage for søkere ved bruk av søkemotorer som Google, Bing, og DuckDuckGo.</p>
+          </div>
+        </article>
+      </a>
 
       <button tabindex="3" onclick="topFunction()" id="toppknapp" title="Tilbake til toppen">Tilbake til toppen</button>
 
-   </main>
+    </main>
 
     <aside>
       <ul>
-        <li><a tabindex="2" class="aside-lenke" href="#">Lenke</a></li>
-        <li><a tabindex="2" class="aside-lenke" href="#">Lenke</a></li>
-        <li><a tabindex="2" class="aside-lenke" href="#">Lenke</a></li>
+        <li><a tabindex="2" class="aside-lenke"
+            href="https://www.techfunnel.com/information-technology/web-content-management-system/">Mer info om CMS</a>
+        </li>
+        <li><a tabindex="2" class="aside-lenke" href="https://www.uutilsynet.no/">Mer info om UU</a></li>
+        <li><a tabindex="2" class="aside-lenke" href="https://nettrafikk.no/sokemotoroptimalisering/hvaerseo">Mer info
+            om SEO</a></li>
+
       </ul>
     </aside>
 
-   
-    <footer>
-      <div class="footer-list-container">
-        <ul>
-          <li>
-            <h3>Kontakt</h3>
-          </li>
-          <li><a tabindex="3" href="#">opptak@hiof.no</a></li>
-          <li><a tabindex="3" href="#">studier@hiof.no</a></li>
-          <li><a tabindex="3" href="#">postmottak@hiof.no</a></li>
-          <li><a tabindex="3" href="#">69 60 80 00</a></li>
-        </ul>
-        <ul>
-          <li>
-            <h3>Lorem Ipsum</h3>
-          </li>
-          <li><a tabindex="3" href="#">Lorem Ipsum</a></li>
-          <li><a tabindex="3" href="#">Lorem Ipsum</a></li>
-          <li><a tabindex="3" href="#">Lorem Ipsum</a></li>
-          <li><a tabindex="3" href="#">Lorem Ipsum</a></li>
-        </ul>
-        <ul>
-          <li>
-            <h3>Hjelp</h3>
-          </li>
-          <li><a tabindex="3" href="#">Kattespørsmål</a></li>
-          <li><a tabindex="3" href="#">Guides</a></li>
-          <li><a tabindex="3" href="#">FAQ</a></li>
-          <li><a tabindex="3" href="#">#Donate</a></li>
 
-        </ul>
-      </div>
-    </footer>
   </div>
+  <footer>
+    <div class="footer-list-container">
+      <div>
+        <h3>Kontakt</h3>
+        <a tabindex="3" href="#">opptak@hiof.no</a>
+        <a tabindex="3" href="#">studier@hiof.no</a>
+        <a tabindex="3" href="#">postmottak@hiof.no</a>
+        <a tabindex="3" href="#">69 60 80 00</a>
+      </div>
+
+      <div>
+        <h3>Lorem Ipsum</h3>
+        <a tabindex="3" href="#">Lorem Ipsum</a>
+        <a tabindex="3" href="#">Lorem Ipsum</a>
+        <a tabindex="3" href="#">Lorem Ipsum</a>
+        <a tabindex="3" href="#">Lorem Ipsum</a>
+      </div>
+
+      <div>
+        <h3>Hjelp</h3>
+        <a tabindex="3" href="#">Kattespørsmål</a>
+        <a tabindex="3" href="#">Guides</a>
+        <a tabindex="3" href="#">FAQ</a>
+        <a tabindex="3" href="#">#Donate</a>
+      </div>
+    </div>
+  </footer>
   <script src="../javascript/scripts.js"></script>
 </body>
+
 </html>

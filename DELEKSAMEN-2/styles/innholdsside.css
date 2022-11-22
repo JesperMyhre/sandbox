@@ -37,8 +37,7 @@ header {
  .kontaktskjema {
   display: flex;
   flex-direction: column;
-
-  width: 400px;
+  width: 50%;
   margin-right: 5px;
 }
 
@@ -65,9 +64,32 @@ header {
   margin-bottom: 30px;
 }
 
+.kart {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
 .info-container {
   display: flex;
   justify-content: space-around;
   padding-bottom: 50px;
   border-top: 0.5px solid black;
+}
+
+@media (max-width: 900px){
+  .kontakt-og-kart {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .kontaktskjema {
+    width: 100%;
+  }
 }

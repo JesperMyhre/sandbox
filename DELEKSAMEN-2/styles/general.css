@@ -1,11 +1,19 @@
 * {
   box-sizing: border-box;
 }
-html {
+html,
+body {
   font-family: roboto, arial;
+  position: relative;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
+  overflow: hidden;
   margin: 0;
   background-image: linear-gradient(180deg, orange, transparent);
 }
@@ -36,15 +44,17 @@ p {
   flex-direction: column;
   position: fixed;
   left: 0;
-  top: 500px;
+
+  top: 300px;
   
   background-color: rgb(61, 61, 61);
-  padding: 10px;
+  padding: 7px;
   border-radius: 0 5px 5px 0;
+  z-index: 99;
 }
 
 .social-bar a {
-  margin-top: 5px;
+  padding-top: 4px;
   font-size: 24px;
   color: white;
   cursor: pointer;

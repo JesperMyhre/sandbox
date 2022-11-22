@@ -5,20 +5,20 @@
 .table-container-cms {
   background-color: white;
   border: 1px solid black;
-  max-width: 80%;
+  width: 95%;
   margin: 25px auto;
 }
 .cms-table-row {
   display: grid;
-  grid-template-columns: 14vw 1fr 1fr 1fr;
+  grid-template-columns: 25% 1fr 1fr 1fr;
 }
 .analyse-table-row {
   display: grid;
-  grid-template-columns: 17.5vw 1fr 1fr;
+  grid-template-columns: 40% 1fr 1fr;
 }
 .uuseo-table-row {
   display: grid;
-  grid-template-columns: 14vw 1fr 1fr;
+  grid-template-columns: 25% 1fr 1fr;
 }
 .table-data,
 .table-header {
@@ -47,6 +47,6 @@
 
   .cms-table-row {
     display: grid;
-    grid-template-columns: 14vw 1fr;
+    grid-template-columns: 25% 1fr;
   }
 }

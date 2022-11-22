@@ -5,20 +5,23 @@
   <!--Twitter-->
   <meta name="twitter:title" content="Analyse">
   <meta name="twitter:url" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/html/Analyse.html">
-  <meta name="twitter:description" content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
+  <meta name="twitter:description"
+    content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
   <meta name="twitter:image" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/images/oversikt-analyse.png">
   <meta name="twitter:image:alt" content="Bilde av Analyse">
 
   <!--Facebook-->
   <meta property="og:title" content="Analyse">
   <meta property="og:url" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/html/Analyse.html">
-  <meta property="og:description" content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
+  <meta property="og:description"
+    content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
   <meta property="og:image" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/images/oversikt-analyse.png">
   <meta property="og:image:alt" content="Bilde av Analyse">
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
+  <meta name="description"
+    content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
   <title>Analyse</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,92 +43,105 @@
 
 <body>
   <div class="main-page-container">
-  <header>
-    <nav>
-      <a href="index.html"><img class="logo-image" src="../images/logo.png" aria-label="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
-      <ul id="nav-menu" class="nav-menu" style="display: none;">
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="CMS.html">CMS</a></li>
-        <li><a href="Analyse.html">Analyse</a></li>
-        <li><a href="UUvsSEO.html">UU vs SEO</a></li>
-        <li><a class="kontakt" href="kontaktoss.html">Kontakt oss</a></li>
-      </ul>
-      <button aria-label="Hamburger-knapp" class="hamburger-icon" onclick="navMenu()"><i class="fa-solid fa-bars"></i></button>
-    </nav>
-  </header>
+    <header>
+      <nav>
+        <a tabindex="1" href="index.html"><img class="logo-image" src="../images/logo.png"
+            aria-label="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
+        <ul id="nav-menu" class="nav-menu" style="display: none;">
+          <li><a tabindex="1" href="index.html">Hjem</a></li>
+          <li><a tabindex="1" href="CMS.html">CMS</a></li>
+          <li><a tabindex="1" href="Analyse.html">Analyse</a></li>
+          <li><a tabindex="1" href="UUvsSEO.html">UU vs SEO</a></li>
+          <li><a class="kontakt" tabindex="1" href="kontaktoss.html">Kontakt oss</a></li>
+        </ul>
+        <button aria-label="Hamburger-knapp" class="hamburger-icon" onclick="navMenu()"><i
+            class="fa-solid fa-bars"></i></button>
+      </nav>
+    </header>
 
-  <main>
-    <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-        fjs.parentNode.insertBefore(js, fjs);
+    <main>
+      <div id="fb-root"></div>
+      <script>(function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+          fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
 
       <div class="social-bar">
-        <a tabindex="2" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Ejesperom%2FDELEKSAMEN-2%2Fhtml%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" target="_blank" aria-label="Deleknapp til Facebook"><i class="fa-brands fa-facebook"></i></a>
-        <a tabindex="2" href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" data-show-count="false" aria-label="Deleknapp til Twitter"><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><i class="fa-brands fa-twitter"></i></a>
-        <a tabindex="2" href="https://www.pinterest.com/pin/create/button/" target="_blank" aria-label="Deleknapp til Pinterest" count-layout="none"><i class="fa-brands fa-pinterest"></i></a>
-        <a tabindex="2" href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank" aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a tabindex="2"
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Ejesperom%2FDELEKSAMEN-2%2Fhtml%2F&amp;src=sdkpreparse"
+          class="fb-xfbml-parse-ignore" target="_blank" aria-label="Deleknapp til Facebook"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a tabindex="2" href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" data-show-count="false"
+          aria-label="Deleknapp til Twitter">
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><i
+            class="fa-brands fa-twitter"></i>
+        </a>
+        <a tabindex="2" href="https://www.pinterest.com/pin/create/button/" target="_blank"
+          aria-label="Deleknapp til Pinterest" count-layout="none"><i class="fa-brands fa-pinterest"></i></a>
+        <a tabindex="2" href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank"
+          aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
       </div>
 
-    <section>
-      <h1>Analyse</h1>
-      <article class="analyse-artikkelkort">
-        <h2>Oversikt</h2>
-        <img src="../images/oversikt-analyse.png" alt="Oversikt over Lighthouse Analyse">
-        <p></p>
-        <img src="../images/analyse-error-kontrast.png" alt="Bilde av kontrast-error">
-        <div class="tiltak-container">
-          <p>ERROR: Enkelte lenker/knapper har lav kontrast mellom skrift og bakgrunnsfarge.</p>
-          <p>LØSNING: Endret fargen på tekst og bakgrunn for bedre kontrast.</p>
-        </div>
-        <img src="../images/analyse-error-header.png" src="Bilde av header-error" alt="Bilde av header-error">
-        <div class="tiltak-container">
-          <p>ERROR: Header-elementene er ikke brukt i konsekvent rekkefølge.</p>
-          <p>LØSNING: Korrigert bruk av Header slik at det blir konsekvent og Google liker meg.</p>
-        </div>
-        <img src="../images/analyse-error-metabeskrivelse.png" alt="Bilde av meta-error">
-        <div class="tiltak-container">
-          <p>ERROR 1: Siden mangler meta-beskrivelse.</p>
-          <p>LØSNING 1: Lagt til meta-beskrivelse på alle sider.</p>
-          <p>ERROR 2: Lenkene i artikkelkortene mangler beskrivelse</p>
-          <p>LØSNING 2: Gjort om hele artikkelkortet til en klikkbar lenke. Artiklene har nøkkelord som beskriver innholdet.</p>
-        </div>
-        <img src="../images/analyse-error-crawl.png" alt="Bilde av crawl-error">
-        <div class="tiltak-container">
-          <p>ERROR: Tom lenke med annen funksjon slo ut på Analyseverktøy.</p>
-          <p>LØSNING: Endret lenken til en knapp.</p>
-        </div>
-        <img src="../images/analyse-error-aria-attributes.png" alt="Bilde av aria-attrubute-error" style="display: block;">
-        <img src="../images/analyse-error-social-aria.png" alt="Bilde av aria-error på sosialbaren">
-        <div class="tiltak-container">
-          <p>ERROR: Lenkene har ikke beskrivende tekst som kan benyttes av f.eks. talesyntese.</p>
-          <p>LØSNING: Lagt til aria-attribute på lenkene som beskriver funksjon.</p>
-        </div>
-        <img src="../images/analyse-error-aria-knapp.PNG" alt="Bilde av aria-error">
-        <div class="tiltak-container">
-          <p>ERROR: Hamburgerknapp mangler navn brukt av talesynteseverktøy.</p>
-          <p>LØSNING: Lagt til Aria-label som beskriver funksjon.</p>
-        </div>
-        <img src="../images/analyse-error-iframe.PNG" alt="Bilde av Iframe-error">
-        <div class="tiltak-container">
-          <p>ERROR: Iframe-kart har ikke beskrivende tittel.</p>
-          <p>LØSNING: Lagt til title-attribut som beskriver kartet.</p>
-        </div>
-        <img src="../images/analyse-error-sendinnknapp.PNG" alt="Bilde av kontrast-error">
-        <div class="tiltak-container">
-          <p>ERROR: Knapp har for lav kontrast.</p>
-          <p>LØSNING: Endret bakgrunnsfarge til grå for bedre kontrast.v </p>
-        </div>
-      </article>
-    </section>
+      <section>
+        <h1>Analyse</h1>
+        <article tabindex="1" class="analyse-artikkelkort">
+          <h2>Oversikt</h2>
+          <img src="../images/oversikt-analyse.png" alt="Oversikt over Lighthouse Analyse">
+          <p></p>
+          <img src="../images/analyse-error-kontrast.png" alt="Bilde av kontrast-error">
+          <div class="tiltak-container">
+            <p>ERROR: Enkelte lenker/knapper har lav kontrast mellom skrift og bakgrunnsfarge.</p>
+            <p>LØSNING: Endret fargen på tekst og bakgrunn for bedre kontrast.</p>
+          </div>
+          <img src="../images/analyse-error-header.png" src="Bilde av header-error" alt="Bilde av header-error">
+          <div class="tiltak-container">
+            <p>ERROR: Header-elementene er ikke brukt i konsekvent rekkefølge.</p>
+            <p>LØSNING: Korrigert bruk av Header slik at det blir konsekvent og Google liker meg.</p>
+          </div>
+          <img src="../images/analyse-error-metabeskrivelse.png" alt="Bilde av meta-error">
+          <div class="tiltak-container">
+            <p>ERROR 1: Siden mangler meta-beskrivelse.</p>
+            <p>LØSNING 1: Lagt til meta-beskrivelse på alle sider.</p>
+            <p>ERROR 2: Lenkene i artikkelkortene mangler beskrivelse</p>
+            <p>LØSNING 2: Gjort om hele artikkelkortet til en klikkbar lenke. Artiklene har nøkkelord som beskriver
+              innholdet.</p>
+          </div>
+          <img src="../images/analyse-error-crawl.png" alt="Bilde av crawl-error">
+          <div class="tiltak-container">
+            <p>ERROR: Tom lenke med annen funksjon slo ut på Analyseverktøy.</p>
+            <p>LØSNING: Endret lenken til en knapp.</p>
+          </div>
+          <img src="../images/analyse-error-aria-attributes.png" alt="Bilde av aria-attrubute-error"
+            style="display: block;">
+          <img src="../images/analyse-error-social-aria.png" alt="Bilde av aria-error på sosialbaren">
+          <div class="tiltak-container">
+            <p>ERROR: Lenkene har ikke beskrivende tekst som kan benyttes av f.eks. talesyntese.</p>
+            <p>LØSNING: Lagt til aria-attribute på lenkene som beskriver funksjon.</p>
+          </div>
+          <img src="../images/analyse-error-aria-knapp.PNG" alt="Bilde av aria-error">
+          <div class="tiltak-container">
+            <p>ERROR: Hamburgerknapp mangler navn brukt av talesynteseverktøy.</p>
+            <p>LØSNING: Lagt til Aria-label som beskriver funksjon.</p>
+          </div>
+          <img src="../images/analyse-error-iframe.PNG" alt="Bilde av Iframe-error">
+          <div class="tiltak-container">
+            <p>ERROR: Iframe-kart har ikke beskrivende tittel.</p>
+            <p>LØSNING: Lagt til title-attribut som beskriver kartet.</p>
+          </div>
+          <img src="../images/analyse-error-sendinnknapp.PNG" alt="Bilde av kontrast-error">
+          <div class="tiltak-container">
+            <p>ERROR: Knapp har for lav kontrast.</p>
+            <p>LØSNING: Endret bakgrunnsfarge til grå for bedre kontrast.v </p>
+          </div>
+        </article>
+      </section>
 
-    
-    <div class="table-container">
-      <!--Fikse styling her!!!!-->
+
+      <div class="table-container">
+        <!--Fikse styling her!!!!-->
         <div class="analyse-table-row" style="background-color: lightpink; font-weight: bold;">
           <div class="table-data">Error</div>
           <div class="table-data">Før</div>
@@ -134,125 +150,95 @@
         <div class="analyse-table-row">
           <div class="table-data">Lav Kontrast</div>
           <div class="table-data">
-            <ul>
-              <li>Hvit tekst på oransj bakgrunn</li>
-            </ul>
+            <p>Hvit tekst på oransj bakgrunn</p>
           </div>
           <div class="table-data">
-            <ul>
-              <li>Hvit tekst på grå bakgrunn</li>
-            </ul>
+            <p>Hvit tekst på grå bakgrunn</p>
           </div>
         </div>
         <div class="analyse-table-row">
           <div class="table-data">Header</div>
           <div class="table-data">
-            <ul>
-              <li>Header-elementene var ikke satt i konsekvent rekkefølge.</li>
-            </ul>
+            <p>Header-elementene var ikke satt i konsekvent rekkefølge.</p>
           </div>
           <div class="table-data">
-            <ul>
-              <li>Satt Header-elementene i konsekvent rekkefølge.</li>
-            </ul>
+            <p>Satt Header-elementene i konsekvent rekkefølge.</p>
           </div>
         </div>
 
         <div class="analyse-table-row">
           <div class="table-data">Meta-beskrivelse</div>
           <div class="table-data">
-            <ul>
-              <li>Manglet meta-beskrivelse på de fleste sidene.</li>
-            </ul>
+            <p>Manglet meta-beskrivelse på de fleste sidene.</p>
           </div>
           <div class="table-data">
-            <ul>
-              <li>Lagt til meta-beskrivelse på alle sider.</li>
-            </ul>
+            <p>Lagt til meta-beskrivelse på alle sider.</p>
           </div>
         </div>
 
         <div class="analyse-table-row">
           <div class="table-data">Lenker uten beskrivelse</div>
           <div class="table-data">
-            <ul>
-              <li>Lenkene i artikkelkortene mangler beskrivelse.</li>
-            </ul>
+            <p>Lenkene i artikkelkortene mangler beskrivelse.</p>
           </div>
           <div class="table-data">
-            <ul>
-              <li>Gjort om hele artikkelkortet til en klikkbar lenke. Artiklene har nøkkelord som beskriver innholdet.</li>
-            </ul>
+            <p>Gjort om hele artikkelkortet til en klikkbar lenke. Artiklene har nøkkelord som beskriver innholdet.
+              </p>
           </div>
         </div>
         <div class="analyse-table-row">
           <div class="table-data">Ikke crawlable lenke</div>
           <div class="table-data">
-            <ul>
-              <li>Tom lenke med annen funksjon er ikke crawlable.</li>
-            </ul>
+            <p>Tom lenke med annen funksjon er ikke crawlable.</p>
           </div>
           <div class="table-data">
-            <ul>
-              <li>Endret lenken til en knapp.</li>
-            </ul>
+            <p>Endret lenken til en knapp.</p>
           </div>
         </div>
         <div class="analyse-table-row">
           <div class="table-data">Lenker uten navn</div>
           <div class="table-data">
-            <ul>
-              <li>Lenkene har ikke beskrivende tekst som kan benyttes av f.eks. talesyntese.</li>
-            </ul>
+            <p>Lenkene har ikke beskrivende tekst som kan benyttes av f.eks. talesyntese.</p>
           </div>
           <div class="table-data">
-            <ul>
-              <li>Lagt til aria-attribute på lenkene som beskriver funksjon.</li>
-            </ul>
+            <p>Lagt til aria-attribute på lenkene som beskriver funksjon.</p>
           </div>
         </div>
       </div>
-  </main>
+    </main>
+    <button tabindex="2" onclick="topFunction()" id="toppknapp" title="Tilbake til toppen">Tilbake til toppen</button>
 
-  <!--<aside>
-    <ul>
-      <li><a class="aside-lenke" href="#">Lenke</a></li>
-      <li><a class="aside-lenke" href="#">Lenke</a></li>
-      <li><a class="aside-lenke" href="#">Lenke</a></li>
-    </ul>
-  </aside>-->
-  <button onclick="topFunction()" id="toppknapp" title="Tilbake til toppen">Tilbake til toppen</button>
+    <a href="../html/tilgjengelighetserklæring.html">tilgjengelighetserklæring</a>
 
-  <a href="../html/tilgjengelighetserklæring.html">tilgjengelighetserklæring</a>
-
-  <footer>
-    <div class="footer-list-container">
-      <ul>
-        <li><h3>Kontakt</h3></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-      </ul>
-      <ul>
-        <li><h3>Lorem Ipsum</h3></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-      </ul>
-      <ul>
-        <li><h3>Hjelp</h3></li>
-        <li><a href="#">Kattespørsmål</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-        <li><a href="#">Lorem Ipsum</a></li>
-
-      </ul>
-    </div>
-  </footer>
-</div>
+    <footer>
+      <div class="footer-list-container">
+        <div>
+          <h3>Kontakt</h3>
+          <a tabindex="3" href="#">opptak@hiof.no</a>
+          <a tabindex="3" href="#">studier@hiof.no</a>
+          <a tabindex="3" href="#">postmottak@hiof.no</a>
+          <a tabindex="3" href="#">69 60 80 00</a>
+        </div>
+  
+        <div>
+          <h3>Lorem Ipsum</h3>
+          <a tabindex="3" href="#">Lorem Ipsum</a>
+          <a tabindex="3" href="#">Lorem Ipsum</a>
+          <a tabindex="3" href="#">Lorem Ipsum</a>
+          <a tabindex="3" href="#">Lorem Ipsum</a>
+        </div>
+  
+        <div>
+          <h3>Hjelp</h3>
+          <a tabindex="3" href="#">Kattespørsmål</a>
+          <a tabindex="3" href="#">Guides</a>
+          <a tabindex="3" href="#">FAQ</a>
+          <a tabindex="3" href="#">#Donate</a>
+        </div>
+      </div>
+    </footer>
+  </div>
   <script src="../javascript/scripts.js"></script>
 </body>
+
 </html>

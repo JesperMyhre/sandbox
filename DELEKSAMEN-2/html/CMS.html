@@ -41,38 +41,49 @@
 
 <body>
   <div class="main-page-container">
-  <header>
-    <nav>
-      <a tabindex="1" href="index.html"><img class="logo-image" src="../images/logo.png" aria-label="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
-      <ul id="nav-menu" class="nav-menu" style="display: none;">
-        <li><a tabindex="1" href="index.html">Hjem</a></li>
-        <li><a tabindex="1" href="CMS.html">CMS</a></li>
-        <li><a tabindex="1" href="Analyse.html">Analyse</a></li>
-        <li><a tabindex="1" href="UUvsSEO.html">UU vs SEO</a></li>
-        <li><a class="kontakt" tabindex="1" href="kontaktoss.html">Kontakt oss</a></li>
-      </ul>
-      <button aria-label="Hamburger-knapp" class="hamburger-icon" onclick="navMenu()"><i class="fa-solid fa-bars"></i></button>
-    </nav>
-  </header>
+    <header>
+      <nav>
+        <a tabindex="1" href="index.html"><img class="logo-image" src="../images/logo.png"
+            aria-label="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
+        <ul id="nav-menu" class="nav-menu" style="display: none;">
+          <li><a tabindex="1" href="index.html">Hjem</a></li>
+          <li><a tabindex="1" href="CMS.html">CMS</a></li>
+          <li><a tabindex="1" href="Analyse.html">Analyse</a></li>
+          <li><a tabindex="1" href="UUvsSEO.html">UU vs SEO</a></li>
+          <li><a class="kontakt" tabindex="1" href="kontaktoss.html">Kontakt oss</a></li>
+        </ul>
+        <button aria-label="Hamburger-knapp" class="hamburger-icon" onclick="navMenu()"><i
+            class="fa-solid fa-bars"></i></button>
+      </nav>
+    </header>
 
-  <main>
-    <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-        fjs.parentNode.insertBefore(js, fjs);
+    <main>
+      <div id="fb-root"></div>
+      <script>(function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+          fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
 
       <div class="social-bar">
-        <a tabindex="2" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Ejesperom%2FDELEKSAMEN-2%2Fhtml%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" target="_blank" aria-label="Deleknapp til Facebook"><i class="fa-brands fa-facebook"></i></a>
-        <a tabindex="2" href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" data-show-count="false" aria-label="Deleknapp til Twitter"><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><i class="fa-brands fa-twitter"></i></a>
-        <a tabindex="2" href="https://www.pinterest.com/pin/create/button/" target="_blank" aria-label="Deleknapp til Pinterest" count-layout="none"><i class="fa-brands fa-pinterest"></i></a>
-        <a tabindex="2" href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank" aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a tabindex="2"
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Ejesperom%2FDELEKSAMEN-2%2Fhtml%2F&amp;src=sdkpreparse"
+          class="fb-xfbml-parse-ignore" target="_blank" aria-label="Deleknapp til Facebook"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a tabindex="2" href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" data-show-count="false"
+          aria-label="Deleknapp til Twitter">
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><i
+            class="fa-brands fa-twitter"></i>
+        </a>
+        <a tabindex="2" href="https://www.pinterest.com/pin/create/button/" target="_blank"
+          aria-label="Deleknapp til Pinterest" count-layout="none"><i class="fa-brands fa-pinterest"></i></a>
+        <a tabindex="2" href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank"
+          aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
       </div>
-    <article>
-      <!--https://en.wikipedia.org/wiki/Web_content_management_system 
+      <article>
+        <!--https://en.wikipedia.org/wiki/Web_content_management_system 
           https://www.xlent.no/blogg/headless-cms 
           https://www.optimizely.com/no/insights/blog/hva-er-headless-cms/ 
           https://www.enkelbedrift.no/artikler/hva-er-et-cms 
@@ -82,280 +93,273 @@
           https://hygraph.com/blog/what-is-a-component-content-management-system 
           https://www.techfunnel.com/information-technology/web-content-management-system/ 
           https://www.ixiasoft.com/types-of-content-management-systems/-->
-      <img class="cms-article-img" src="https://kinsta.com/wp-content/uploads/2018/03/content-management-system-2.png" alt="Artikkelbilde av CMS">
-      <h1>CMS</h1>
-      <p>Et CMS, eller Content Management System, er et system som brukes til å planlegge, oppdatere, tilpasse, og publisere innhold på nettsider og andre kanaler. Et CMS egner seg godt for både enkeltpersoner og store bedrifter som vil ha personaliserte nettsider uten at det koster for mye. Et CMS tillater nemlig enhver person å danne og publisere nettsider uten å kunne kode i det hele tatt. CMS er delt opp i to kategorier - Seamless (traditional) og Headless CMS, men hva er det som skiller disse?</p>
-      <p>I et Seamless (traditional) CMS kan brukere legge til, oppdatere, og endre innhold samt formatteringen av innholdet uten å trenge forkunnskaper innen HTML/CSS. Mange Seamless CMS har pene brukergrensesnitt hvor brukeren kan sette inn bilder og tekstbokser, og designe dette som de vil mens koden blir automatisk generert i bakgrunnen. Det finnes også uendelig med templates og themes som kan brukes til å personliggjøre nettsiden yttligere. Nettsiden kan også gjøres med funksjonell ved bruk av plugins.</p>
-      <p>I et headless CMS er innholdet separat fra publiseringsløsningen. En Headless løsning passer bra for de som vil ha det samme innholdet spredt til flere kanaler. Brukeren trenger bare laste opp innholdet til en database (backend) som sender informasjonen videre via API’s til frontend - typ en nettside, app, smartklokke, mail, osv... Hver av frontend-versjonene har egen kode som automatisk formaterer det rå innholdet fra backend slik at det blir pent uansett skjermstørrelse.</p>
-      <p>Det er fordeler og ulemper ved begge CMS-løsningene. Seamless har fordelen i at både innhold, utforming, og alle verktøy og plugins er samlet på en plass, som gjør det veldig enkelt å holde styr på det hele. Men blant enkeltheten kommer også noen drawbacks. De enkle templatene som gjør mye av jobben er lite fleksible og begrenser hvor kreativt utbredt en nettside kan designes. Og hvis nettsiden over lang tid blir veldig stor med masse innhold, kan nettsiden begynne å bli treg og lite optimalisert.</p>
-      <p>Headless CMS har fordelen ved at brukeren bare trenger å laste opp innholdet på én plass. Innholdet vil deretter sendes ut til de forskjellige kanalene via API’s og formatteres automatisk. En nedside med dette er at hver av kanalene har sin egen frontend som må justeres og opprettholdes av en utvikler, noe som fører til ekstra kostnader, noe som kan være sårt for mindre bedrifter/startups. En annen nedside er at brukeren ikke vil få et preview av hvordan innholdet blir formatert (med mindre et verktøy er laget for det).</p>
-      <p>Seamless og Headless er de to hovedkategoriene innen CMS, men det finnes mange forskjellige subløsninger som er tilpasset spesifikke behov - WCMS (Web-CMS), CCMS (Component-CMS), og ECM (Enterprise-CMS), er blant noen av dem.</p>
-      <ul>
-        <li>
-          <p>WCMS, Web Content Management System, er en CMS designet for webutvikling. Den er utstyrt med verktøy for samarbeid, automatisering, og administrering av innholdet på nettsiden. Lar brukere uten forkunnskaper om koding lage nettsider og gir mer rom for å designe og personalisere.</p>
-        </li>
-        <li>
-          <p>CCMS, Component Management System, er et system som lagrer innhold i segmenter på én plass for å lettere holde oversikt over innholdet, og for å kunne gjenbruke det samme innholdet på flere frontends.</p>
-        </li>
-        <li>
-          <p>ECM, Enterprise Content Management, er et system som samler inn og sender ut informasjon via et intranett til ansatte i en bedrift. ECM forsikrer at de riktige personene får dokumentene og informasjonen de trenger til arbeidet sitt. Systemet holder også oversikt over hvilke filer og annet som er relevant til prosjektet og sletter de irrelevante for å holde mer orden.</p>
-        </li>
-      </ul>
-    </article>
+        <img class="cms-article-img" src="https://kinsta.com/wp-content/uploads/2018/03/content-management-system-2.png"
+          alt="Artikkelbilde av CMS">
+        <h1>CMS</h1>
+        <p>Et CMS, eller Content Management System, er et system som brukes til å planlegge, oppdatere, tilpasse, og
+          publisere innhold på nettsider og andre kanaler. Et CMS egner seg godt for både enkeltpersoner og store
+          bedrifter som vil ha personaliserte nettsider uten at det koster for mye. Et CMS tillater nemlig enhver person
+          å danne og publisere nettsider uten å kunne kode i det hele tatt. CMS er delt opp i to kategorier - Seamless
+          (traditional) og Headless CMS, men hva er det som skiller disse?</p>
+        <p>I et Seamless (traditional) CMS kan brukere legge til, oppdatere, og endre innhold samt formatteringen av
+          innholdet uten å trenge forkunnskaper innen HTML/CSS. Mange Seamless CMS har pene brukergrensesnitt hvor
+          brukeren kan sette inn bilder og tekstbokser, og designe dette som de vil mens koden blir automatisk generert
+          i bakgrunnen. Det finnes også uendelig med templates og themes som kan brukes til å personliggjøre nettsiden
+          yttligere. Nettsiden kan også gjøres med funksjonell ved bruk av plugins.</p>
+        <p>I et headless CMS er innholdet separat fra publiseringsløsningen. En Headless løsning passer bra for de som
+          vil ha det samme innholdet spredt til flere kanaler. Brukeren trenger bare laste opp innholdet til en database
+          (backend) som sender informasjonen videre via API’s til frontend - typ en nettside, app, smartklokke, mail,
+          osv... Hver av frontend-versjonene har egen kode som automatisk formaterer det rå innholdet fra backend slik
+          at det blir pent uansett skjermstørrelse.</p>
+        <p>Det er fordeler og ulemper ved begge CMS-løsningene. Seamless har fordelen i at både innhold, utforming, og
+          alle verktøy og plugins er samlet på en plass, som gjør det veldig enkelt å holde styr på det hele. Men blant
+          enkeltheten kommer også noen drawbacks. De enkle templatene som gjør mye av jobben er lite fleksible og
+          begrenser hvor kreativt utbredt en nettside kan designes. Og hvis nettsiden over lang tid blir veldig stor med
+          masse innhold, kan nettsiden begynne å bli treg og lite optimalisert.</p>
+        <p>Headless CMS har fordelen ved at brukeren bare trenger å laste opp innholdet på én plass. Innholdet vil
+          deretter sendes ut til de forskjellige kanalene via API’s og formatteres automatisk. En nedside med dette er
+          at hver av kanalene har sin egen frontend som må justeres og opprettholdes av en utvikler, noe som fører til
+          ekstra kostnader, noe som kan være sårt for mindre bedrifter/startups. En annen nedside er at brukeren ikke
+          vil få et preview av hvordan innholdet blir formatert (med mindre et verktøy er laget for det).</p>
+        <p>Seamless og Headless er de to hovedkategoriene innen CMS, men det finnes mange forskjellige subløsninger som
+          er tilpasset spesifikke behov - WCMS (Web-CMS), CCMS (Component-CMS), og ECM (Enterprise-CMS), er blant noen
+          av dem.</p>
+        <ul>
+          <li>
+            <p>WCMS, Web Content Management System, er en CMS designet for webutvikling. Den er utstyrt med verktøy for
+              samarbeid, automatisering, og administrering av innholdet på nettsiden. Lar brukere uten forkunnskaper om
+              koding lage nettsider og gir mer rom for å designe og personalisere.</p>
+          </li>
+          <li>
+            <p>CCMS, Component Management System, er et system som lagrer innhold i segmenter på én plass for å lettere
+              holde oversikt over innholdet, og for å kunne gjenbruke det samme innholdet på flere frontends.</p>
+          </li>
+          <li>
+            <p>ECM, Enterprise Content Management, er et system som samler inn og sender ut informasjon via et intranett
+              til ansatte i en bedrift. ECM forsikrer at de riktige personene får dokumentene og informasjonen de
+              trenger til arbeidet sitt. Systemet holder også oversikt over hvilke filer og annet som er relevant til
+              prosjektet og sletter de irrelevante for å holde mer orden.</p>
+          </li>
+        </ul>
+      </article>
 
-  <!--https://www.youtube.com/watch?v=QGfBkYQJf8c-->
-  <div tabindex="1" class="table-container-cms">
-    <div class="cms-table-row">
-      <div class="table-data"></div>
-      <div class="table-data">Fordeler</div>
-      <div class="table-data">Ulemper</div>
-      <div class="table-data">Likheter/Ulikheter</div>
-    </div>
+      <!--https://www.youtube.com/watch?v=QGfBkYQJf8c-->
+      <div tabindex="1" class="table-container-cms">
+        <div class="cms-table-row">
+          <div class="table-data"></div>
+          <div class="table-data">Fordeler</div>
+          <div class="table-data">Ulemper</div>
+          <div class="table-data">Likheter/Ulikheter</div>
+        </div>
 
-    <div class="cms-table-row">
-    <!--https://en.wikipedia.org/wiki/Web_content_management_system-->
-      <div class="table-header"><h2>WCMS</h2></div>
-      <div class="table-data">
-        <ul>
-          <li>Tilgjengelig for brukere uten forkunnskaper innen koding.</li>
-          <li>Har mange templates og themes for å personalisere nettsiden.</li>
-          <li>Sparer tid og penger ved å være lett å oppdatere og publisere.</li>
-        </ul>
-      </div>
-      <div class="table-data">
-        <ul>
-          <li>Kan bli dyrere å hoste ved større prosjekter.</li>
-          <li>Større prosjekter kan også føre til treg lasting av sidene.</li>
-          <li>Sårbar for hackere.</li>
-        </ul>
-      </div>
-      <div class="table-data">
-        <ul>
-          <li>Automatisk publisering</li>
-        </ul>
-        <ul>
-          <li>Designbasert.</li>
-          <li>Lett tilgjengelig for enkeltperson.</li>
-        </ul>
-      </div>
-    </div>
+        <div class="cms-table-row">
+          <div class="table-header">
+            <h2>WCMS</h2>
+          </div>
+          <div class="table-data">
+            <p>Tilgjengelig for brukere uten forkunnskaper innen koding.</p>
+            <p>Har mange templates og themes for å personalisere nettsiden.</p>
+            <p>Sparer tid og penger ved å være lett å oppdatere og publisere.</p>
+          </div>
+          <div class="table-data">
+            <p>Kan bli dyrere å hoste ved større prosjekter.</p>
+            <p>Større prosjekter kan også føre til treg lasting av sidene.</p>
+            <p>Sårbar for hackere.</p>
+          </div>
+          <div class="table-data">
+            <p>Automatisk publisering</p>
+            <p>Designbasert.</p>
+            <p>Lett tilgjengelig for enkeltperson.</p>
+          </div>
+        </div>
 
-    <div class="cms-table-row">
-      <div class="table-header"><h2>CCMS</h2></div>
-      <div class="table-data">
-        <ul>
-          <li>Alt innhold er samlet på ett sted.</li>
-          <li>Alt innhold er gjenbrukbart på flere frontends.</li>
-          <li>Får god oversikt over hvem som har oppdatert innhold.</li>
-        </ul>
-      </div>
-      <div class="table-data">
-        <ul>
-          <li>Kan ta tid å implementere og behøver mye planlegging.</li>
-        </ul>
-      </div>
-      <div class="table-data">
-        <ul>
-          <li>Alt samlet på et sted.</li>
-          <li>Øker arbeidsflyt når systemet er satt opp.</li>
-          <li>Oversiktlig og administrativ.</li>
-        </ul>
-        <ul>
-          <li>Typisk Headless CMS</li>
-        </ul>
-      </div>
-    </div>
+        <div class="cms-table-row">
+          <div class="table-header">
+            <h2>CCMS</h2>
+          </div>
+          <div class="table-data">
+            <p>Alt innhold er samlet på ett sted.</p>
+            <p>Alt innhold er gjenbrukbart på flere frontends.</p>
+            <p>Får god oversikt over hvem som har oppdatert innhold.</p>
+          </div>
+          <div class="table-data">
+            <p>Kan ta tid å implementere og behøver mye planlegging.</p>
+          </div>
+          <div class="table-data">
+            <p>Alt samlet på et sted.</p>
+            <p>Øker arbeidsflyt når systemet er satt opp.</p>
+            <p>Oversiktlig og administrativ.</p>
+            <p>Typisk Headless CMS</p>
+          </div>
+        </div>
 
-    <div class="cms-table-row">
-      <div class="table-header"><h2>ECM</h2></div>
-      <div class="table-data">
-        <ul>
-          <li>Enkel lagring av dokumenter, som kan videresendes til de riktige folka.</li>
-          <li>Øker arbeidsflyt og effektivitet på arbeidsplassen.</li>
-          <li>Sparer penger ved effektiv lagring av innhold.</li>
-        </ul>
+        <div class="cms-table-row">
+          <div class="table-header">
+            <h2>ECM</h2>
+          </div>
+          <div class="table-data">
+            <p>Enkel lagring av dokumenter, som kan videresendes til de riktige folka.</p>
+            <p>Øker arbeidsflyt og effektivitet på arbeidsplassen.</p>
+            <p>Sparer penger ved effektiv lagring av innhold.</p>
+          </div>
+          <div class="table-data">
+            <p>Alt arbeid kan stoppe opp om systemet går ned.</p>
+            <p>Systemet fungerer ikke like bra om ikke alle vet hvordan det fungerer.</p>
+          </div>
+          <div class="table-data">
+            <p>Alt samlet på ett sted.</p>
+            <p>Øker arbeidsflyt.</p>
+            <p>Oversiktlig og administrativ.</p>
+            <p>Ikke veldig designbasert.</p>
+          </div>
+        </div>
       </div>
-      <div class="table-data">
-        <ul>
-          <li>Alt arbeid kan stoppe opp om systemet går ned.</li>
-          <li>Systemet fungerer ikke like bra om ikke alle vet hvordan det fungerer.</li>
-        </ul>
+
+      <div class="table-container-mobile-cms" style="display: none;">
+        <div class="cms-table-row">
+          <div class="table-data"></div>
+          <div class="table-header">
+            <h2>WCMS</h2>
+          </div>
+        </div>
+
+        <div class="cms-table-row">
+          <div class="table-data">Fordeler</div>
+          <div class="table-data">
+            <p>Tilgjengelig for brukere uten forkunnskaper innen koding.</p>
+            <p>Har mange templates og themes for å personalisere nettsiden.</p>
+            <p>Sparer tid og penger ved å være lett å oppdatere og publisere.</p>
+          </div>
+        </div>
+
+        <div class="cms-table-row">
+          <div class="table-data">Ulemper</div>
+          <div class="table-data">
+            <p>Kan bli dyrere å hoste ved større prosjekter.</p>
+            <p>Større prosjekter kan også føre til treg lasting av sidene.</p>
+            <p>Sårbar for hackere.</p>
+          </div>
+        </div>
+
+        <div class="cms-table-row">
+          <div class="table-data"></div>
+          <div class="table-header">
+            <h2>CCMS</h2>
+          </div>
+        </div>
+
+        <div class="cms-table-row">
+          <div class="table-data">Fordeler</div>
+          <div class="table-data">
+            <p>Alt innhold er samlet på ett sted.</p>
+            <p>Alt innhold er gjenbrukbart på flere frontends.</p>
+            <p>Får god oversikt over hvem som har oppdatert innhold.</p>
+          </div>
+        </div>
+
+        <div class="cms-table-row">
+          <div class="table-data">Ulemper</div>
+          <div class="table-data">
+            <p>Kan ta tid å implementere og behøver mye planlegging.</p>
+          </div>
+        </div>
+
+        <div class="cms-table-row">
+          <div class="table-data"></div>
+          <div class="table-header">
+            <h2>ECM</h2>
+          </div>
+        </div>
+
+        <div class="cms-table-row">
+          <div class="table-data">Fordeler</div>
+          <div class="table-data">
+            <p>Enkel lagring av dokumenter, som kan videresendes til de riktige folka.</p>
+            <p>Øker arbeidsflyt og effektivitet på arbeidsplassen.</p>
+            <p>Sparer penger ved effektiv lagring av innhold.</p>
+          </div>
+        </div>
+
+        <div class="cms-table-row">
+          <div class="table-data">Ulemper</div>
+          <div class="table-data">
+            <p>Alt arbeid kan stoppe opp om systemet går ned.</p>
+            <p>Systemet fungerer ikke like bra om ikke alle vet hvordan det fungerer.</p>
+          </div>
+        </div>
+        <div class="cms-table-row">
+          <div class="table-data"></div>
+          <div class="table-data">Likheter/Ulikeheter</div>
+        </div>
+
+        <div class="cms-table-row">
+          <div class="table-header">
+            <h2>WCMS</h2>
+          </div>
+          <div class="table-data">
+            <p>Automatisk publisering</p>
+            <p>Designbasert.</p>
+            <p>Lett tilgjengelig for enkeltperson.</p>
+          </div>
+        </div>
+
+        <div class="cms-table-row">
+          <div class="table-header">
+            <h2>CCMS</h2>
+          </div>
+          <div class="table-data">
+            <p>Alt samlet på et sted.</p>
+            <p>Øker arbeidsflyt når systemet er satt opp.</p>
+            <p>Oversiktlig og administrativ.</p>
+            <p>Typisk Headless CMS</p>
+          </div>
+        </div>
+        <div class="cms-table-row">
+          <div class="table-header">
+            <h2>ECM</h2>
+          </div>
+          <div class="table-data">
+            <p>Alt samlet på ett sted.</p>
+            <p>Øker arbeidsflyt.</p>
+            <p>Oversiktlig og administrativ.</p>
+            <p>Ikke veldig designbasert.</p>
+          </div>
+        </div>
       </div>
-      <div class="table-data">
-        <ul>
-          <li>Alt samlet på ett sted.</li>
-          <li>Øker arbeidsflyt.</li>
-          <li>Oversiktlig og administrativ.</li>
-        </ul>
-        <ul>
-          <li>Ikke veldig designbasert.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
-  <div class="table-container-mobile-cms" style="display: none;">
-    <div class="cms-table-row">
-      <div class="table-data"></div>
-    <!--https://en.wikipedia.org/wiki/Web_content_management_system-->
-      <div class="table-header"><h2>WCMS</h2></div>
-    </div>
+      <button tabindex="2" onclick="topFunction()" id="toppknapp" title="Tilbake til toppen">Tilbake til toppen</button>
 
-    <div class="cms-table-row">
-      <div class="table-data">Fordeler</div>
-      <div class="table-data">
-        <ul>
-          <li>Tilgjengelig for brukere uten forkunnskaper innen koding.</li>
-          <li>Har mange templates og themes for å personalisere nettsiden.</li>
-          <li>Sparer tid og penger ved å være lett å oppdatere og publisere.</li>
-        </ul>
-      </div>
-    </div>
+    </main>
 
-    <div class="cms-table-row">
-      <div class="table-data">Ulemper</div>
-      <div class="table-data">
-        <ul>
-          <li>Kan bli dyrere å hoste ved større prosjekter.</li>
-          <li>Større prosjekter kan også føre til treg lasting av sidene.</li>
-          <li>Sårbar for hackere.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cms-table-row"> 
-      <div class="table-data"></div>
-      <div class="table-header"><h2>CCMS</h2></div>
-    </div>
-
-    <div class="cms-table-row">
-      <div class="table-data">Fordeler</div>
-      <div class="table-data">
-        <ul>
-          <li>Alt innhold er samlet på ett sted.</li>
-          <li>Alt innhold er gjenbrukbart på flere frontends.</li>
-          <li>Får god oversikt over hvem som har oppdatert innhold.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cms-table-row">
-      <div class="table-data">Ulemper</div>
-      <div class="table-data">
-        <ul>
-          <li>Kan ta tid å implementere og behøver mye planlegging.</li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="cms-table-row">
-      <div class="table-data"></div>
-      <div class="table-header"><h2>ECM</h2></div>
-    </div>
-
-    <div class="cms-table-row">
-      <div class="table-data">Fordeler</div>
-      <div class="table-data">
-        <ul>
-          <li>Enkel lagring av dokumenter, som kan videresendes til de riktige folka.</li>
-          <li>Øker arbeidsflyt og effektivitet på arbeidsplassen.</li>
-          <li>Sparer penger ved effektiv lagring av innhold.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cms-table-row">
-      <div class="table-data">Ulemper</div>
-      <div class="table-data">
-        <ul>
-          <li>Alt arbeid kan stoppe opp om systemet går ned.</li>
-          <li>Systemet fungerer ikke like bra om ikke alle vet hvordan det fungerer.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="cms-table-row">
-      <div class="table-data"></div>
-      <div class="table-data">Likheter/Ulikeheter</div>
-    </div>
-
-    <div class="cms-table-row">
-      <div class="table-header"><h2>WCMS</h2></div>
-      <div class="table-data">
-        <ul>
-          <li>Automatisk publisering</li>
-        </ul>
-        <ul>
-          <li>Designbasert.</li>
-          <li>Lett tilgjengelig for enkeltperson.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cms-table-row">
-      <div class="table-header"><h2>CCMS</h2></div>
-      <div class="table-data">
-        <ul>
-          <li>Alt samlet på et sted.</li>
-          <li>Øker arbeidsflyt når systemet er satt opp.</li>
-          <li>Oversiktlig og administrativ.</li>
-        </ul>
-        <ul>
-          <li>Typisk Headless CMS</li>
-        </ul>
-      </div>
-    </div>
-    <div class="cms-table-row">
-      <div class="table-header"><h2>ECM</h2></div>
-      <div class="table-data">
-        <ul>
-          <li>Alt samlet på ett sted.</li>
-          <li>Øker arbeidsflyt.</li>
-          <li>Oversiktlig og administrativ.</li>
-        </ul>
-        <ul>
-          <li>Ikke veldig designbasert.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <button tabindex="2" onclick="topFunction()" id="toppknapp" title="Tilbake til toppen">Tilbake til toppen</button>
-
-  </main>
-
-  <footer>
-    <div class="footer-list-container">
-      <ul>
-        <li>
+    <footer>
+      <div class="footer-list-container">
+        <div>
           <h3>Kontakt</h3>
-        </li>
-        <li><a tabindex="3" href="#">opptak@hiof.no</a></li>
-        <li><a tabindex="3" href="#">studier@hiof.no</a></li>
-        <li><a tabindex="3" href="#">postmottak@hiof.no</a></li>
-        <li><a tabindex="3" href="#">69 60 80 00</a></li>
-      </ul>
-      <ul>
-        <li>
-          <h3>Lorem Ipsum</h3>
-        </li>
-        <li><a tabindex="3" href="#">Lorem Ipsum</a></li>
-        <li><a tabindex="3" href="#">Lorem Ipsum</a></li>
-        <li><a tabindex="3" href="#">Lorem Ipsum</a></li>
-        <li><a tabindex="3" href="#">Lorem Ipsum</a></li>
-      </ul>
-      <ul>
-        <li>
-          <h3>Hjelp</h3>
-        </li>
-        <li><a tabindex="3" href="#">Kattespørsmål</a></li>
-        <li><a tabindex="3" href="#">Guides</a></li>
-        <li><a tabindex="3" href="#">FAQ</a></li>
-        <li><a tabindex="3" href="#">#Donate</a></li>
+          <a tabindex="3" href="#">opptak@hiof.no</a>
+          <a tabindex="3" href="#">studier@hiof.no</a>
+          <a tabindex="3" href="#">postmottak@hiof.no</a>
+          <a tabindex="3" href="#">69 60 80 00</a>
+        </div>
 
-      </ul>
-    </div>
-  </footer>
-</div>
+        <div>
+          <h3>Lorem Ipsum</h3>
+          <a tabindex="3" href="#">Lorem Ipsum</a>
+          <a tabindex="3" href="#">Lorem Ipsum</a>
+          <a tabindex="3" href="#">Lorem Ipsum</a>
+          <a tabindex="3" href="#">Lorem Ipsum</a>
+        </div>
+
+        <div>
+          <h3>Hjelp</h3>
+          <a tabindex="3" href="#">Kattespørsmål</a>
+          <a tabindex="3" href="#">Guides</a>
+          <a tabindex="3" href="#">FAQ</a>
+          <a tabindex="3" href="#">#Donate</a>
+        </div>
+      </div>
+    </footer>
+  </div>
   <script src="../javascript/scripts.js"></script>
 </body>
+
 </html>
