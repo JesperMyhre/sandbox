@@ -97,7 +97,7 @@ header nav ul li a::before {
   left: 0;
   background-color: #fff;
   transform: scaleX(0);
-  transition: transform 0.02 ease;
+  transition: transform 0.02s ease;
   /*transition: top 0.2s ease;*/
 }
 

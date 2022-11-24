@@ -14,27 +14,27 @@
 }
 .analyse-table-row {
   display: grid;
-  grid-template-columns: 40% 1fr 1fr;
+  grid-template-columns: 25% 1fr 1fr;
 }
 .uuseo-table-row {
   display: grid;
   grid-template-columns: 25% 1fr 1fr;
 }
+
 .table-data,
 .table-header {
   border: 1px solid black;
   padding: 5px 10px;
 }
 
-.table-header h2,
-.table-header h3 {
-  font-weight: 400;
-  font-size: 16px;
-  margin: 0;
+.table-data p {
+  padding-bottom: 1rem;
 }
 
-.table-data ul {
-  padding-left: 15px;
+.table-header h2,
+.table-header h3 {
+  font-size: 16px;
+  margin: 0;
 }
 
 @media (max-width: 900px) {

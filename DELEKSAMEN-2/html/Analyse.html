@@ -2,22 +2,6 @@
 <html lang="nb">
 
 <head>
-  <!--Twitter-->
-  <meta name="twitter:title" content="Analyse">
-  <meta name="twitter:url" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/html/Analyse.html">
-  <meta name="twitter:description"
-    content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
-  <meta name="twitter:image" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/images/oversikt-analyse.png">
-  <meta name="twitter:image:alt" content="Bilde av Analyse">
-
-  <!--Facebook-->
-  <meta property="og:title" content="Analyse">
-  <meta property="og:url" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/html/Analyse.html">
-  <meta property="og:description"
-    content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
-  <meta property="og:image" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/images/oversikt-analyse.png">
-  <meta property="og:image:alt" content="Bilde av Analyse">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
@@ -38,6 +22,23 @@
   <link href="../font/css/brands.css" rel="stylesheet">
   <link href="../font/css/solid.css" rel="stylesheet">
 
+  <!--Twitter-->
+  <meta name="twitter:title" content="Analyse">
+  <meta name="twitter:url" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/html/Analyse.html">
+  <meta name="twitter:description"
+    content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
+  <meta name="twitter:image" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/images/oversikt-analyse.png">
+  <meta name="twitter:image:alt" content="Bilde av Analyse">
+
+  <!--Facebook-->
+  <meta property="og:title" content="Analyse">
+  <meta property="og:url" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/html/Analyse.html">
+  <meta property="og:description"
+    content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
+  <meta property="og:image" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/images/oversikt-analyse.png">
+  <meta property="og:image:alt" content="Bilde av Analyse">
+
+
   <link rel="icon" type="image/x-icon" href="../images/logo.png">
 </head>
 
@@ -46,7 +47,7 @@
     <header>
       <nav>
         <a tabindex="1" href="index.html"><img class="logo-image" src="../images/logo.png"
-            aria-label="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
+            alt="Logobilde til nettstedet. Fungerer som Hjemknapp"></a>
         <ul id="nav-menu" class="nav-menu" style="display: none;">
           <li><a tabindex="1" href="index.html">Hjem</a></li>
           <li><a tabindex="1" href="CMS.html">CMS</a></li>
@@ -54,7 +55,7 @@
           <li><a tabindex="1" href="UUvsSEO.html">UU vs SEO</a></li>
           <li><a class="kontakt" tabindex="1" href="kontaktoss.html">Kontakt oss</a></li>
         </ul>
-        <button aria-label="Hamburger-knapp" class="hamburger-icon" onclick="navMenu()"><i
+        <button aria-label="Hamburger-knapp. Åpner navigasjonsmeny" class="hamburger-icon" onclick="navMenu()"><i
             class="fa-solid fa-bars"></i></button>
       </nav>
     </header>
@@ -76,11 +77,11 @@
             class="fa-brands fa-facebook"></i></a>
         <a tabindex="2" href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" data-show-count="false"
           aria-label="Deleknapp til Twitter">
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><i
+          <script async src="https://platform.twitter.com/widgets.js"></script><i
             class="fa-brands fa-twitter"></i>
         </a>
         <a tabindex="2" href="https://www.pinterest.com/pin/create/button/" target="_blank"
-          aria-label="Deleknapp til Pinterest" count-layout="none"><i class="fa-brands fa-pinterest"></i></a>
+          aria-label="Deleknapp til Pinterest"><i class="fa-brands fa-pinterest"></i></a>
         <a tabindex="2" href="https://www.instagram.com/hiofnorge/?hl=en" target="_blank"
           aria-label="Deleknapp til Instagram"><i class="fa-brands fa-instagram"></i></a>
       </div>
@@ -89,19 +90,19 @@
         <h1>Analyse</h1>
         <article tabindex="1" class="analyse-artikkelkort">
           <h2>Oversikt</h2>
-          <img src="../images/oversikt-analyse.png" alt="Oversikt over Lighthouse Analyse">
+          <img class="article-img" src="../images/oversikt-analyse.png" alt="Oversikt over Lighthouse Analyse">
           <p></p>
-          <img src="../images/analyse-error-kontrast.png" alt="Bilde av kontrast-error">
+          <img class="article-img" src="../images/analyse-error-kontrast.png" alt="Bilde av kontrast-error">
           <div class="tiltak-container">
             <p>ERROR: Enkelte lenker/knapper har lav kontrast mellom skrift og bakgrunnsfarge.</p>
             <p>LØSNING: Endret fargen på tekst og bakgrunn for bedre kontrast.</p>
           </div>
-          <img src="../images/analyse-error-header.png" src="Bilde av header-error" alt="Bilde av header-error">
+          <img class="article-img" src="../images/analyse-error-header.png" alt="Bilde av header-error">
           <div class="tiltak-container">
             <p>ERROR: Header-elementene er ikke brukt i konsekvent rekkefølge.</p>
             <p>LØSNING: Korrigert bruk av Header slik at det blir konsekvent og Google liker meg.</p>
           </div>
-          <img src="../images/analyse-error-metabeskrivelse.png" alt="Bilde av meta-error">
+          <img class="article-img" src="../images/analyse-error-metabeskrivelse.png" alt="Bilde av meta-error">
           <div class="tiltak-container">
             <p>ERROR 1: Siden mangler meta-beskrivelse.</p>
             <p>LØSNING 1: Lagt til meta-beskrivelse på alle sider.</p>
@@ -109,29 +110,29 @@
             <p>LØSNING 2: Gjort om hele artikkelkortet til en klikkbar lenke. Artiklene har nøkkelord som beskriver
               innholdet.</p>
           </div>
-          <img src="../images/analyse-error-crawl.png" alt="Bilde av crawl-error">
+          <img class="article-img" src="../images/analyse-error-crawl.png" alt="Bilde av crawl-error">
           <div class="tiltak-container">
             <p>ERROR: Tom lenke med annen funksjon slo ut på Analyseverktøy.</p>
             <p>LØSNING: Endret lenken til en knapp.</p>
           </div>
-          <img src="../images/analyse-error-aria-attributes.png" alt="Bilde av aria-attrubute-error"
+          <img class="article-img" src="../images/analyse-error-aria-attributes.png" alt="Bilde av aria-attrubute-error"
             style="display: block;">
-          <img src="../images/analyse-error-social-aria.png" alt="Bilde av aria-error på sosialbaren">
+          <img class="article-img" src="../images/analyse-error-social-aria.png" alt="Bilde av aria-error på sosialbaren">
           <div class="tiltak-container">
             <p>ERROR: Lenkene har ikke beskrivende tekst som kan benyttes av f.eks. talesyntese.</p>
             <p>LØSNING: Lagt til aria-attribute på lenkene som beskriver funksjon.</p>
           </div>
-          <img src="../images/analyse-error-aria-knapp.PNG" alt="Bilde av aria-error">
+          <img class="article-img" src="../images/analyse-error-aria-knapp.PNG" alt="Bilde av aria-error">
           <div class="tiltak-container">
             <p>ERROR: Hamburgerknapp mangler navn brukt av talesynteseverktøy.</p>
             <p>LØSNING: Lagt til Aria-label som beskriver funksjon.</p>
           </div>
-          <img src="../images/analyse-error-iframe.PNG" alt="Bilde av Iframe-error">
+          <img class="article-img" src="../images/analyse-error-iframe.PNG" alt="Bilde av Iframe-error">
           <div class="tiltak-container">
             <p>ERROR: Iframe-kart har ikke beskrivende tittel.</p>
             <p>LØSNING: Lagt til title-attribut som beskriver kartet.</p>
           </div>
-          <img src="../images/analyse-error-sendinnknapp.PNG" alt="Bilde av kontrast-error">
+          <img class="article-img" src="../images/analyse-error-sendinnknapp.PNG" alt="Bilde av kontrast-error">
           <div class="tiltak-container">
             <p>ERROR: Knapp har for lav kontrast.</p>
             <p>LØSNING: Endret bakgrunnsfarge til grå for bedre kontrast.v </p>
@@ -208,7 +209,9 @@
     </main>
     <button tabindex="2" onclick="topFunction()" id="toppknapp" title="Tilbake til toppen">Tilbake til toppen</button>
 
-    <a href="../html/tilgjengelighetserklæring.html">tilgjengelighetserklæring</a>
+    <form action="../Tilgjengelighetserklæring.pdf">
+    <button class="generell-knapp">Tilgjengelighetserklæring</button>
+    </form>
 
     <footer>
       <div class="footer-list-container">

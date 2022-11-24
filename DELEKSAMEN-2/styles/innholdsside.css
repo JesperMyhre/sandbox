@@ -6,6 +6,10 @@ section {
   line-height: 24px;
   padding: 12px;
   border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .analyse-artikkelkort {
@@ -26,8 +30,10 @@ header {
   height: 100px;
 }
 
-.cms-article-img {
+.article-img {
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
  .analyse-artikkelkort img{
    max-width: 250px;
@@ -75,6 +81,17 @@ header {
   justify-content: space-around;
   padding-bottom: 50px;
   border-top: 0.5px solid black;
+}
+
+.generell-knapp {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #3d3d3d;
+  color: white;
+  font-size: 18px;
+  padding: 1rem;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 @media (max-width: 900px){
