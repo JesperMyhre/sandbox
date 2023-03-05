@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
 }
+
+/*her hjalp kompisen min Kai meg litt*/
 html,
 body {
   font-family: roboto, arial;
@@ -20,23 +22,6 @@ body {
 
 p {
   margin: 0;
-}
-
-.sound-button {
-  background-color: blue;
-  color: white;
-  font-weight: bold;
-
-  width: 80px;
-  padding: 10px 20px;
-  margin: 10px 0 20px 0;
-  border-style: solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.sound-button:active {
-  transform: translate(0.2px, 1px);
 }
 
 .social-bar {

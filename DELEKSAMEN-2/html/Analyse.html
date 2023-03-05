@@ -25,16 +25,14 @@
   <!--Twitter-->
   <meta name="twitter:title" content="Analyse">
   <meta name="twitter:url" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/html/Analyse.html">
-  <meta name="twitter:description"
-    content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
+  <meta name="twitter:description" content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
   <meta name="twitter:image" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/images/oversikt-analyse.png">
   <meta name="twitter:image:alt" content="Bilde av Analyse">
 
   <!--Facebook-->
   <meta property="og:title" content="Analyse">
   <meta property="og:url" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/html/Analyse.html">
-  <meta property="og:description"
-    content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
+  <meta property="og:description" content="Se gjennom Analysen og hvilke endringer som er gjort for å optimalisere nettstedet.">
   <meta property="og:image" content="https://itstud.hiof.no/~jesperom/DELEKSAMEN-2/images/oversikt-analyse.png">
   <meta property="og:image:alt" content="Bilde av Analyse">
 
@@ -117,6 +115,8 @@
           </div>
           <img class="article-img" src="../images/analyse-error-aria-attributes.png" alt="Bilde av aria-attrubute-error"
             style="display: block;">
+            <p>ERROR: ARIA-attributt er ikke brukt riktig.</p>
+            <p>LØSNING: Får denne error-meldingen selv om det ikke er noe aria-attributter i dokumentet. Usikker på løsning.</p>
           <img class="article-img" src="../images/analyse-error-social-aria.png" alt="Bilde av aria-error på sosialbaren">
           <div class="tiltak-container">
             <p>ERROR: Lenkene har ikke beskrivende tekst som kan benyttes av f.eks. talesyntese.</p>
@@ -135,14 +135,16 @@
           <img class="article-img" src="../images/analyse-error-sendinnknapp.PNG" alt="Bilde av kontrast-error">
           <div class="tiltak-container">
             <p>ERROR: Knapp har for lav kontrast.</p>
-            <p>LØSNING: Endret bakgrunnsfarge til grå for bedre kontrast.v </p>
+            <p>LØSNING: Endret bakgrunnsfarge til grå for bedre kontrast.</p>
           </div>
+          <img src="../images/analyse-error-tabindex.PNG" alt="Bilde av tabindeks-error">
+          <p>ERROR: Tabindex er forhåndssatt.</p>
+          <p>LØSNING: Ingen. Tabindexen er forhåndssatt med fokus på tastaturnavigasjon.</p>
         </article>
       </section>
 
 
       <div class="table-container">
-        <!--Fikse styling her!!!!-->
         <div class="analyse-table-row" style="background-color: lightpink; font-weight: bold;">
           <div class="table-data">Error</div>
           <div class="table-data">Før</div>
@@ -203,6 +205,33 @@
           </div>
           <div class="table-data">
             <p>Lagt til aria-attribute på lenkene som beskriver funksjon.</p>
+          </div>
+        </div>
+        <div class="analyse-table-row">
+          <div class="table-data">Hamburgerknapp mangler navn</div>
+          <div class="table-data">
+            <p>Hamburgerknapp mangler navn som benyttes av f.eks. talesyntese.</p>
+          </div>
+          <div class="table-data">
+            <p>Lagt til aria-attribute på lenkene som beskriver knapp og funksjon.</p>
+          </div>
+        </div>
+        <div class="analyse-table-row">
+          <div class="table-data">Kart har ikke beskrivende tittel</div>
+          <div class="table-data">
+            <p>Kart har ikke beskrivende tittel brukt av crawlers for indeksering.</p>
+          </div>
+          <div class="table-data">
+            <p>Lagt til beskrivende tittel på iframe-elementet.</p>
+          </div>
+        </div>
+        <div class="analyse-table-row">
+          <div class="table-data">Tabindex</div>
+          <div class="table-data">
+            <p>Tabindex er forhåndssatt.</p>
+          </div>
+          <div class="table-data">
+            <p>Tabindex er forhåndssatt.</p>
           </div>
         </div>
       </div>

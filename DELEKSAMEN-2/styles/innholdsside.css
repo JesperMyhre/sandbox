@@ -74,6 +74,7 @@ header {
   width: 100%;
   padding: 1rem;
   border-radius: 30px;
+  border: none;
 }
 
 .info-container {
